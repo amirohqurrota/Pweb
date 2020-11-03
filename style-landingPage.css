@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+}
+
+{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'M Plus Rounded 1c', sans-serif;
+    background-color: var(--white);
+}
+
+.header1{
+    padding: 30px;
+    margin-bottom: 10px;
+    max-width: 700px;
+    color: rgba(12, 55, 86, 1);
+}
+.header1>.h7{
+    max-width: 850px;
+}
+
+
+
+.isian{
+    padding: 20px;
+    margin-top: 1000px;
+    border-top: 5px solid  rgba(12, 55, 86, 1);
+    border-radius: 20px;
+    width: 1000px;
+    height: 1000px;
+    margin:auto;
+    background-color:rgba(183, 217, 226, 0.5); 
+}
+
+.isian>form{
+    position: relative;
+    padding-top: 50 px;
+}
+.tulisan>ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.tulisan>ul>li{
+    justify-content: space-between;
+
+}
+
+.tulisan{
+    width: 90% ;
+    position: relative; 
+    font-weight: bolder;
+}
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    width: 90% ;
+    position: relative;
+    margin: 20px auto;
+    opacity: 100% ;
+}
+.button{
+    background-color: rgb(71, 92, 119);
+    border: black;
+    font-weight: bolder;
+    font-size: larger;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left : 800px;
+    text-align: center;
+}
