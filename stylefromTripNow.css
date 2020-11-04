@@ -12,7 +12,8 @@ body {
     font-family: 'M Plus Rounded 1c', sans-serif;
     background-color: var(--white);
 }
-
+ //judul
+ 
 .header1{
     padding: 30px;
     margin-bottom: 10px;
@@ -23,7 +24,26 @@ body {
     max-width: 850px;
 }
 
+.wrap-form{
+    display: flex;
+    justify-content:space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+}
+.form>li{
+    list-style-type: none;
+    font-weight: bold;
+}
+.form>input[type=text]{
+    widt
 
+}
+
+.transparan{
+    opacity: 0%;
+    
+}
 
 .isian{
     padding: 20px;
@@ -42,11 +62,10 @@ body {
 }
 .tulisan>ul{
     display: flex;
-    list-style-type: none;
+    list-style: none;
     justify-content: space-between;
 }
 .tulisan>ul>li{
-    justify-content: space-between;
 
 }
 
