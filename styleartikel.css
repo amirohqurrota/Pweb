@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+}
+
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'M Plus Rounded 1c', sans-serif;
+    background-color: 240, 252, 254;
+}
+.subsription{
+	background-color: black;
+}
+
+.highlight{
+	margin-right: 50px;
+	width: 100%;
+	height: 500px;
+	border-radius: 20px;
+	background-image: url("file gambar/steven-coffey-pAEeGAf30dg-unsplash.jpg");
+	background-color: black;
