@@ -12,8 +12,13 @@ body{
     font-family: 'M Plus Rounded 1c', sans-serif;
     background-color: 240, 252, 254;
 }
-.subsription{
-	background-color: black;
+.subscription{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.input[type:"submit"]{
+	width
 }
 
 .highlight{
@@ -23,3 +28,33 @@ body{
 	border-radius: 20px;
 	background-image: url("file gambar/steven-coffey-pAEeGAf30dg-unsplash.jpg");
 	background-color: black;
+}
+.wrap-artikel-sebaris{
+	display: flex;
+	width: 90%;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+.gambar-satuan{
+	background-color: brown;
+	height: 200px;
+	width: 300px;
+	border-radius: 10px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 0px;
+}
+.tulisan-satuan{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.tulisan-satuan>p{
+	font-weight: bolder;
+	margin-bottom: 0px;
+}
+.tulisan-satuan>a{
+	color: grey;
+	font-style: normal;
+}
