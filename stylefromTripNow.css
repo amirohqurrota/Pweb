@@ -12,7 +12,19 @@ body{
     font-family: 'M Plus Rounded 1c', sans-serif;
     background-color: var(--white);
 }
+.navigasi-tulisan{
+    text-align: left;
+    display: flex;
+    justify-content:flex-end;
+    font-weight: bolder;
+    padding:10px;
+    padding-right:8px;
 
+}
+.navigasi-tulisan>a{
+    margin:20px;
+    color:rgba(12, 55, 86, 1);
+}
 
 .header-gambar{
      margin-top: -100px;

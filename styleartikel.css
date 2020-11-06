@@ -12,6 +12,21 @@ body{
     font-family: 'M Plus Rounded 1c', sans-serif;
     background-color: rgba(240, 252, 254, 1)
 }
+
+.navigasi-tulisan{
+	text-align: left;
+	display: flex;
+	justify-content:flex-end;
+	font-weight: bolder;
+	padding:10px;
+	padding-right:8px;
+
+}
+.navigasi-tulisan>a{
+	margin:20px;
+	color:rgba(12, 55, 86, 1);
+}
+
 .subscription{
 	display: flex;
 	justify-content: center;
