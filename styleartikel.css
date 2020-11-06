@@ -10,46 +10,70 @@
 }
 body{
     font-family: 'M Plus Rounded 1c', sans-serif;
-    background-color: 240, 252, 254;
+    background-color: rgba(240, 252, 254, 1)
 }
 .subscription{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 30px;
 }
+
 .input[type:"submit"]{
 	width
 }
 
 .highlight{
+	width: 93%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.gambar-highlight{
 	margin-right: 50px;
 	width: 100%;
 	height: 500px;
 	border-radius: 20px;
 	background-image: url("file gambar/steven-coffey-pAEeGAf30dg-unsplash.jpg");
-	background-color: black;
 }
+.tulisan-highlight{
+	color: white;
+	margin-top: -100px;
+	padding-left: 20px;
+}
+.tulisan-highlight>a{
+	margin-top: 0px;
+	color:white;
+}
+.tulisan-highlight>h2{
+	margin-bottom: 0px;
+}
+
+.artikel{
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+}
+
 .wrap-artikel-sebaris{
 	display: flex;
-	width: 90%;
 	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 30px;
+}
+
+.artikel-satuan{
+	width: 27%;
+	margin-right: auto;
+	margin-left: auto;
 }
 .gambar-satuan{
 	background-color: brown;
-	height: 200px;
-	width: 300px;
+	height: 230px;
+	width: 100%;
 	border-radius: 10px;
-	margin-left: 40px;
-	margin-right: 40px;
 	margin-bottom: 0px;
 }
-.tulisan-satuan{
-	margin-left: 40px;
-	margin-right: 40px;
-}
+
 .tulisan-satuan>p{
 	font-weight: bolder;
 	margin-bottom: 0px;
@@ -57,4 +81,33 @@ body{
 .tulisan-satuan>a{
 	color: grey;
 	font-style: normal;
+}
+.more-tips{
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: rgba(30, 83, 114, 1);
+	margin-top: 100px;
+}
+.more-tips>a{
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	color: white;
+	font-weight: bolder;
+	font-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.bottom{
+	width: 100%;
+	height: 400px;
+	background-color: rgba(12, 55, 86, 1);
+	margin-top: 100px;
 }
