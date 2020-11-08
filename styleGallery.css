@@ -8,6 +8,20 @@
     margin: 0;
     padding: 0;
 }
+
+.navigasi-tulisan{
+	text-align: left;
+	display: flex;
+	justify-content:flex-end;
+	font-weight: bolder;
+	padding:10px;
+	padding-right:8px;
+
+}
+.navigasi-tulisan>a{
+	margin:20px;
+	color:rgba(12, 55, 86, 1);
+}
 body{
     font-family: 'M Plus Rounded 1c', sans-serif;
     background-color: rgba(240, 252, 254, 1)
@@ -33,21 +47,21 @@ body{
 .tulisan-gallery-kiri{
 	width: 45%;
 	height: 350px;
-	margin-left: 10px;
+	margin-right: 10px;
 	font-size: 120%;
 }
-.tulisan-gallery-kiri> h2,h3,p{
+.tulisan-kanan{
 	text-align: right;
+}
+.tulisan-kiri> h2,h3,p{
+	text-align: left;
 }
 
 .gallery-satuan{
 	display: flex;
+	margin-top: 50px;
 }
-.tulisan-gallery>h2{
-	margin: 0px;
-	padding: 0px;
-}
-.tulisan-gallery>h3{
+.tulisan-gallery>h2,h3,.tulisan-gallery-kiri>h2,h3{
 	margin: 0px;
 	padding: 0px;
 }

@@ -125,4 +125,30 @@ a:link {
 	height: 400px;
 	background-color: rgba(12, 55, 86, 1);
 	margin-top: 100px;
+	color: white;
+}
+
+.bottom-baris-satu{
+	display: inline-flex;
+	align-items: stretch;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+.etc{
+	width: 850px;
+}
+
+.etc-li{
+	list-style-type: none;
+}
+.bottom-login{
+	display: grid;
+}
+#image-bottom{
+	width: 200px;
+	border-radius: 5px;
+	margin-bottom: 0px;
+}
+.bottom-logo{
+	align-self: center;
 }
