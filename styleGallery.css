@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+}
+
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'M Plus Rounded 1c', sans-serif;
+    background-color: rgba(240, 252, 254, 1)
+}
+.gambar-gallery{
+	width: 45%;
+	height: 350px;
+	background-color: black;
+	border-radius: 20px;
+	background-image: url("file gambar/steven-coffey-pAEeGAf30dg-unsplash.jpg");
+}
+.gallery{
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 50px;
+}
+.tulisan-gallery{
+	width: 45%;
+	height: 350px;
+	margin-left: 10px;
+	font-size: 120%;
+}
+.tulisan-gallery-kiri{
+	width: 45%;
+	height: 350px;
+	margin-left: 10px;
+	font-size: 120%;
+}
+.tulisan-gallery-kiri> h2,h3,p{
+	text-align: right;
+}
+
+.gallery-satuan{
+	display: flex;
+}
+.tulisan-gallery>h2{
+	margin: 0px;
+	padding: 0px;
+}
+.tulisan-gallery>h3{
+	margin: 0px;
+	padding: 0px;
+}
