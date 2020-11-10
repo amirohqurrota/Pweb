@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center;
     color: #0C3756;
-    background-image: url(background.jpg);
+    background-image: url("file gambar/background\ \(1\).jpg");
     height: 100vh;
 }
 h2{
@@ -74,4 +74,36 @@ h2{
     border: none;
     margin-left: 50px;
     font-size: medium;
+}
+.bottom{
+	width: 100%;
+	height: 400px;
+	background-color: rgba(12, 55, 86, 1);
+	margin-top: 100px;
+	color: white;
+}
+
+.bottom-baris-satu{
+	display: inline-flex;
+	align-items: stretch;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+.etc{
+	width: 850px;
+}
+
+.etc-li{
+	list-style-type: none;
+}
+.bottom-login{
+	display: grid;
+}
+#image-bottom{
+	width: 200px;
+	border-radius: 5px;
+	margin-bottom: 0px;
+}
+.bottom-logo{
+	align-self: center;
 }
