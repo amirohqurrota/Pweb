@@ -14,9 +14,9 @@ h2{
     font-family: 'M Plus Rounded 1c', sans-serif;
     color: #0C3756;
     text-align: left;
-    margin-top: 200px;
+    margin-top: 100px;
     padding-left: 8%;
-    font-size: 50px;
+    font-size: 40px;
 }
 .navigasi-tulisan{
     text-align: left;
@@ -72,7 +72,7 @@ h2{
     background-color: #3A728E;
     color: white;
     border: none;
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: medium;
 }
 .bottom{
