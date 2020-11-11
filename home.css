@@ -75,6 +75,16 @@ h2{
     margin-left: 20px;
     font-size: medium;
 }
+.follow{
+    margin-bottom: 200px;
+    margin:30px;
+    text-align: center;
+    align-items: flex-end;
+}
+#follow{
+    width: 30px;
+    margin-bottom: 200px;
+}
 .bottom{
 	width: 100%;
 	min-height: fit-content;
@@ -145,4 +155,24 @@ h2{
 #follow-us-logo{
 	width: 30px;
 	margin-left: 20px;
+}
+.about-us{
+    background-size: cover;
+    background-position: center;
+    color: #0C3756;
+    height: 120vh;
+    width: 205vh;
+}
+h1{
+    font-family: 'M Plus Rounded 1c', sans-serif;
+    color: #0C3756;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+.atas{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    position: center;
 }
