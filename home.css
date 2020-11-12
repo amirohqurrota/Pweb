@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: 'M Plus Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 .background{
     background-size: cover;
@@ -11,7 +12,7 @@
     height: 100vh;
 }
 h2{
-    font-family: 'M Plus Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #0C3756;
     text-align: left;
     margin-top: 100px;
@@ -45,7 +46,6 @@ h2{
 }
 .box{
     padding-left: 8%;
-    float: left;
     display: flex;
     color: black;
 }
@@ -53,7 +53,7 @@ h2{
     border-radius: 30px;
     width: 500px;
 	height: 40px;
-	background-color: #B7D9E2);
+	background-color: #B7D9E2;
 	border: 1px solid #3A728E;
 	padding-left: 4%;
     color: black;
@@ -156,14 +156,30 @@ h2{
 	width: 30px;
 	margin-left: 20px;
 }
-.gambar{
-    background-color: white;
+.about-us{
+    background-image: url("file gambar/about.jpg");
     background-size: cover;
-    background-position: center;
-    width: 205vh;
+    background-position: 0 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.bg{
+    background-color: white;
+    width: 100vw;
+    opacity: 70%;
+    display:flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.tulisan{
+    font-size: 30px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 h1{
-    font-family: 'M Plus Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #0C3756;
     text-align: center;
     font-size: 30px;
@@ -173,4 +189,24 @@ h1{
     width: 150px;
     height: 50px;
     position: center;
+}
+.kontak{
+    background-image: url("file gambar/contact.jpg");
+    background-size: cover;
+    background-position: 0 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.isi img{
+    width: 40px;
+    margin-right: 20px;
+}
+.isi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
 }
