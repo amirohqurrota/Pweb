@@ -10,26 +10,52 @@
     color: #0C3756;
     background-image: url("file gambar/background\ \(1\).jpg");
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
 }
 h2{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #0C3756;
     text-align: left;
-    margin-top: 100px;
     padding-left: 8%;
+    padding-right: 8%;
     font-size: 40px;
 }
-.navigasi-tulisan{
-    text-align: left;
+.navigasi{
+	position: fixed;
+	background-color:rgba(240, 252, 254, 1);
+	width: 100vw;
+	align-content: left;
+	margin: 0;
+    padding: 0;
+    top: 0;
+    opacity: 1;
     display: flex;
-    justify-content:flex-end;
-    font-weight: bolder;
-    padding-right:8%;
-    margin-top: -65px;
+    flex-direction: row;
+    align-items: center;
+    z-index: 99;
 }
-.navigasi-tulisan a{
-    margin:20px;
-    color:rgba(12, 55, 86, 1);
+.navigasi-wrap{
+	padding: 0;
+}
+.navigasi-tulisan{
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	display: flex;
+	justify-content:flex-end;
+	font-weight: bolder;
+	padding:10px;
+	padding-right:8px;
+
+}
+.navigasi-tulisan>a{
+	margin-left: 20px;
+	margin-right: 20px;
+	color:rgba(12, 55, 86, 1);
 }
 .header-left{
     height: 12%;
@@ -76,14 +102,12 @@ h2{
     font-size: medium;
 }
 .follow{
-    margin-bottom: 200px;
     margin:30px;
     text-align: center;
     align-items: flex-end;
 }
 #follow{
     width: 30px;
-    margin-bottom: 200px;
 }
 .bottom{
 	width: 100%;
@@ -173,9 +197,11 @@ h2{
     padding: 20px;
     align-items: center;
     flex-direction: column;
+    padding-right: 8%;
+    padding-left: 8%;
 }
 .tulisan{
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 h1{
