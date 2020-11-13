@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+}
+
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'M Plus Rounded 1c', sans-serif;
+	background-color: rgba(240, 252, 254, 1);
+	padding: 0;
+	margin: 0;
+}
+.navigasi{
+	position: fixed;
+	background-color:rgba(240, 252, 254, 1);
+	width: 100%;
+	align-content: left;
+	margin: 0;
+	padding: 0;
+}
+.navigasi-wrap{
+	padding: 0;
+	margin-top: auto;
+}
+.navigasi-tulisan{
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	display: flex;
+	justify-content:flex-end;
+	font-weight: bolder;
+	padding:10px;
+	padding-right:8px;
+
+}
+.navigasi-tulisan>a{
+	margin-left: 20px;
+	margin-right: 20px;
+    color:rgba(12, 55, 86, 1); 
+    text-decoration: none;
+}
+
+.subscription{
+	padding-top: 70px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	color: rgba(12, 55, 86, 1);
+	
+}
+#subscription-type,#subscription-submit{
+	font-family: 'M Plus Rounded 1c', 'sans-serif';
+
+}
+#subscription-type{
+	border-radius: 5px;
+	border-color: black;
+	border-width: 1px;
+	height: 30px;
+	width: 350px;
+	background-color: rgba(255, 246, 246, 1);
+}
+#subscription-submit{
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	border-color: rgba(12, 55, 86, 1);
+	border-width: 1px;
+	height: 35px;
+	width: 150px;
+	background-color: rgba(12, 55, 86, 1);
+	margin-left: -20px;
+
+}
+
+.highlight{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.gambar-highlight{
+	margin-right: 50px;
+	width: 100%;
+	height: 500px;
+	border-radius: 20px;
+    background-image: url("file gambar/steven-coffey-pAEeGAf30dg-unsplash.jpg");
+    background-position: center;
+}
+.tulisan-highlight{
+	color: white;
+	margin-top: -150px;
+    padding-left: 20px;
+    font-size: larger;
+    width: 60%;
+}
+
+.isi-artikel{
+    width: 90%;
+    margin-top: 80px;
+	margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#paragraf-tulisan{
+    width: 70%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.artikel-lainnya{
+    border-left: black;
+    width: 25%;
+    
+}
+.artikel-lainnya-satuan{
+    display: flex;
+    width: 95%;
+    margin-bottom: 100px;
+}
+
+.gambar-satuan{
+    width: 200px;
+    height: 100px;
+}
+#gambar-satuan{
+    width:inherit;
+    border-radius: 10px;
+}
+.tulisan-satuan>a{
+    font-weight: bolder;
+}
+.tulisan-satuan>a,.artikel-lainnya>h4>a{
+    color: black;
+}
+a:hover{
+    color: grey;
+}
+.tulisan-satuan{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+.bottom{
+	width: 100%;
+	min-height: fit-content;
+	background-color: rgba(12, 55, 86, 1);
+	margin-top: 200px;
+	color: white;
+}
+
+.bottom-baris-satu{
+	display: flex;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
+	justify-content: space-between;
+}
+.etc{
+	width: 850px;
+}
+
+.etc-li{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.bottom-login{
+	display: grid;
+}
+#image-bottom{
+	width: 300px;
+	border-radius: 5px;
+	margin-bottom: 0px;
+}
+
+.bottom-logo{
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	margin-top: -40px;
+	
+}
+#submit-login-bottom{
+	display: flex;
+	background-color:rgba(118, 169, 255, 1);
+	border-radius: 5px;
+	border-width: 0px;
+	width: 50%;
+	justify-content: center;
+	justify-self: flex-end;
+	margin-top: 15px;
+
+}
+.follow-us{
+	text-align: center;
+	max-width: fit-content;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left: 50px;
+
+}
+.follow-us-wrap-logo{
+	display: flex;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#follow-us-logo{
+	width: 30px;
+	margin-left: 20px;
+}

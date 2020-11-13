@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: 'M Plus Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 .background{
     background-size: cover;
@@ -9,26 +10,57 @@
     color: #0C3756;
     background-image: url("file gambar/background\ \(1\).jpg");
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
 }
 h2{
-    font-family: 'M Plus Rounded 1c', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #0C3756;
     text-align: left;
-    margin-top: 100px;
     padding-left: 8%;
+    padding-right: 8%;
     font-size: 40px;
 }
-.navigasi-tulisan{
-    text-align: left;
+.navigasi{
+	position: fixed;
+	background-color:rgba(240, 252, 254, 1);
+	width: 100vw;
+	align-content: left;
+	margin: 0;
+    padding: 0;
+    top: 0;
+    opacity: 1;
     display: flex;
-    justify-content:flex-end;
-    font-weight: bolder;
-    padding-right:8%;
-    margin-top: -65px;
+    flex-direction: row;
+    align-items: center;
+    z-index: 99;
 }
-.navigasi-tulisan a{
-    margin:20px;
-    color:rgba(12, 55, 86, 1);
+.navigasi-tulisan>a{
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.navigasi-wrap{
+	padding: 0;
+}
+.navigasi-tulisan{
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	display: flex;
+	justify-content:flex-end;
+	font-weight: bolder;
+	padding:10px;
+	padding-right:8px;
+
+}
+.navigasi-tulisan>a{
+	margin-left: 20px;
+	margin-right: 20px;
+	color:rgba(12, 55, 86, 1);
 }
 .header-left{
     height: 12%;
@@ -45,7 +77,6 @@ h2{
 }
 .box{
     padding-left: 8%;
-    float: left;
     display: flex;
     color: black;
 }
@@ -53,7 +84,7 @@ h2{
     border-radius: 30px;
     width: 500px;
 	height: 40px;
-	background-color: #B7D9E2);
+	background-color: #B7D9E2;
 	border: 1px solid #3A728E;
 	padding-left: 4%;
     color: black;
@@ -75,6 +106,74 @@ h2{
     margin-left: 20px;
     font-size: medium;
 }
+.follow{
+    margin:30px;
+    text-align: center;
+    align-items: flex-end;
+}
+
+#follow{
+    width: 30px;
+}
+
+.about-us{
+    background-image: url("file gambar/about.jpg");
+    background-size: cover;
+    background-position: 0 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.bg{
+    background-color: white;
+    width: 100vw;
+    opacity: 70%;
+    display:flex;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.tulisan{
+    font-size: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+h1{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #0C3756;
+    text-align: center;
+    font-size: 30px;
+}
+.atas{
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    position: center;
+}
+.kontak{
+    background-image: url("file gambar/contact.jpg");
+    background-size: cover;
+    background-position: 0 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.isi>img{
+    width: 40px;
+    margin-right: 20px;
+}
+.isi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
 .bottom{
 	width: 100%;
 	min-height: fit-content;
@@ -145,4 +244,83 @@ h2{
 #follow-us-logo{
 	width: 30px;
 	margin-left: 20px;
+}
+
+/*style pop up login*/
+
+.pop-up-form{
+    display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+}
+.box-popup{
+	position: fixed;
+	text-align: center;
+	width: 350px;
+	background-color: #598BA4;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5%;
+	box-shadow: 0 10px 10px 10px rgb(0, 0, 0, .2);
+}
+.header{
+	color: #0C3757;
+	font-size: 22px;
+	font-family: 'M Plus Rounded 1c', sans-serif;
+}
+.header p{
+	font-size: medium;
+}
+.login-area{
+	text-align: center;
+	padding: 50px 50px 30px 50px;
+}
+.username,
+.password{
+	width: 100%;
+	text-align: center;
+	padding: 13px 0;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: #B7D9E2;
+	margin-bottom: 15px;
+	transition: .5s;
+}
+.username::placeholder,
+.password::placeholder{
+	color: #0C3757;
+}
+.username:focus,
+.password:focus{
+	background-color: #114266;
+}
+.submit {
+	width: 150px;
+	padding: 10px;
+	background-color: #0C3757;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #B7D9E2;
+	border: none;
+	outline: none;
+	margin: 10px;
+	transition: .2s;
+	cursor: pointer;
+}
+.submit:hover{
+	background-color: #598BA4;
+}
+
+.login-area>a{
+	display: block;
+	font-size: x-small;
+	text-decoration: none;
+	color: #0C3757;
+	margin-top: 2px;
 }

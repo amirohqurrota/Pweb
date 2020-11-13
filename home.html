@@ -6,27 +6,49 @@
     <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
-    <div class="background">
-        <div class="atasan">
-            <div class="header-left">
-                <img src="file gambar/logoo.png" class="logo">
-            </div>
-            <div class="header-right">
-                <nav class="navigasi" navbar-fixed-stop>
-                    <div class="navigasi-tulisan">
-                        <a href="" class="navbar-link">HOME</a>
-                        <a href="" class="navbar-link">PRICING</a>
-                        <a href="" class="navbar-link">REQUEST</a>
-                        <a href="" class="navbar-link">TRAVEL TIPS</a>
-                        <a href="" class="navbar-link">TRIP NOW</a>
-                        <a href="" class="navbar-link">CONTACT</a>
-                        <a href="" class="navbar-link">GALLERY</a>
-                        <a href="" class="navbar-link">SIGN IN</a>
-                    </div>
-                </nav>
+    <nav class="navigasi" navbar-fixed-stop> 
+        <img src="file gambar/logoo.png" class="logo">
+        <div class="navigasi-wrap">
+            <div class="navigasi-logo"></div>
+            <div class="navigasi-tulisan">
+                <a href="home.html" class="navbar-link">HOME</a>
+                <a href="" class="navbar-link">PRICING</a>
+                <a href="#about" class="navbar-link">ABOUT</a>
+                <a href="travelTips.html" class="navbar-link">TRAVEL TIPS</a>
+                <a href="tripNow.html" class="navbar-link">TRIP NOW</a>
+                <a href="#contact" class="navbar-link">CONTACT</a>
+                <a href="gallery.html" class="navbar-link">GALLERY</a>
+                <a nohref  onclick="openForm()" class="navbar-link">SIGN IN</a>
             </div>
         </div>
+    </nav>
 
+    <div class="pop-up-form" id="login-popup">
+        <form class="box-popup">
+            <div class="header">
+                <h4>LOGIN</h4>
+                <p>Djalan - djalan, welcome to wonderful of Indonesia</p>
+            </div>
+            <div class="login-area">
+                <input type="text" class="username" placeholder="Username">
+                <input type="password" class="password" placeholder="Password">
+                <input type="submit" value="Login" class="submit" onclick="closeForm()">
+                <a href="#">Forget your password </a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("login-popup").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+}
+    </script>
+
+
+    <div class="background">
         <h2>VACATION WITH MINIMUM EFFORTS BUT MAXIMUM SERVICE</h2>
         <div class="box">
             <input list="journey" placeholder="Search your journey" name="journey">
@@ -42,14 +64,53 @@
                 <button type="submit">Search</button>
             </div>
         </div>  
+        <div class="follow">
+            <a href="instagram.com" ><img src="file gambar/logo-instagram.png" alt="" id="follow"></a>
+			<a href="instagram.com" ><img src="file gambar/logo-google.png" alt="" id="follow"></a>
+			<a href="instagram.com" ><img src="file gambar/logo-facebook.png" alt="" id="follow"></a>
+        </div>
+    </div>
        
-    <section id="about">
-        <h1>About</h1>
-            <div class="about-us">
+<section id="about">
+    <div class="about-us">
+        <div class="bg">
+            <div class="tulisan">
+                <h1>ABOUT</h1>
+                <p>Djalan Djalan is a professional travel agent that brings you explore to the best spot and the best hidden gem in Indonesia. We will make your travelling experience level up but still with affordable prices. We believe that customers happiness is the key of the succes company. So, Let us make you happy and Introduce you to the beautiful of Indonesia</p>
+            </div>    
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="kontak">
+        <div class="bg">
+            <h1>CONTACT</h1>
+            <div class="daftar-kontak">
+                <div class="isi">
+                    <img src="file gambar/maps.png">
+                    <p>Malioboro Street 5 Sosromenduran, Gedong Tengen, Yogyakarta City, Special Region of Yogyakarta</p>
+                </div>
+                <div class="isi">
+                    <img src="file gambar/telephone.png">
+                    <p>(0274) - 556677 / 0857 - 8822 - 1177</p>
+                </div>
+                <div class="isi">
+                    <img src="file gambar/mail.png">
+                    <p>kitadjalandjalan@gmail.com</p>
+                </div>
+                <div class="isi">
+                    <img src="file gambar/facebook.png">
+                    <p>Kita Djalan - djalan</p>
+                </div>
+                <div class="isi">
+                    <img src="file gambar/ig.png">
+                    <p>kita_djalandjalan</p>
+                </div>
             </div>
-
-    </section>
-
+        </div>
+    </div>
+</section>
     <div class="bottom">
 		<div class="bottom-baris-satu">
 			<div class="etc">
