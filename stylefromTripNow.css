@@ -4,15 +4,39 @@
     --white: #ffffff;
 }
 
-{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     font-family: 'M Plus Rounded 1c', sans-serif;
     background-color: var(--white);
+    margin: 0px;
+    padding: 0px;
+}
+.navigasi{
+    position: fixed;
+    background-color:rgba(240, 252, 254, 1);
+    width: 100%;
+    align-content: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+}
+.navigasi-logo{
+    max-height: 50px;
+    min-width: 50px;
+    padding-left: 20px;
+}
+#image-navigasi{
+    height: 100%;
+}
+.navigasi-wrap{
+    padding: 0;
+    margin-top: auto;
+    display: flex;
 }
 .navigasi-tulisan{
+    width: 85%;
+    padding: 0;
+    margin: 0;
     text-align: left;
     display: flex;
     justify-content:flex-end;
@@ -22,12 +46,25 @@ body{
 
 }
 .navigasi-tulisan>a{
-    margin:20px;
+    margin-left: 20px;
+    margin-right: 20px;
     color:rgba(12, 55, 86, 1);
 }
-
 .header-gambar{
-     margin-top: -100px;
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 50px;
+    background-image: url("file gambar/matheus-bandoch-Wj76BhHrGG0-unsplash.jpg");
+    display: flex;
+    align-items: center;
+}
+
+.header-tulisan{
+    align-items: center;
+    padding-left: 100px;
+    font-size: larger;
  }
 .header1{
     margin-left: 90px;
@@ -37,6 +74,27 @@ body{
 }
 .header1>.h7{
     max-width: 850px;
+}
+.isian{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 1000px;
+    border-top: 5px solid  rgba(12, 55, 86, 1);
+    border-radius: 20px;
+    width: 1150px;
+    height: 800px;
+    margin:auto;
+    background-color:rgba(183, 217, 226, 0.5); 
+}
+
+.isian>form{
+    padding-top: 80px;
+}
+.isian>h8{
+    font-weight: bold;
+
 }
 
 .wrap-form{
@@ -82,45 +140,8 @@ body{
     margin-left : 800px;
     text-align: center;
 }
-.isian{
-    padding: 20px;
-    margin-top: 1000px;
-    border-top: 5px solid  rgba(12, 55, 86, 1);
-    border-radius: 20px;
-    width: 1150px;
-    height: 800px;
-    margin:auto;
-    background-color:rgba(183, 217, 226, 0.5); 
-}
-.isian>form{
-    position: relative;
-    padding-top: 50 px;
-}
 
-/*
 
-.tulisan>ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-.tulisan>ul>li{
 
-}
 
-.tulisan{
-    width: 90% ;
-    position: relative; 
-    font-weight: bolder;
-}
-
-.input{
-    display: flex;
-    justify-content: space-between;
-    width: 90% ;
-    position: relative;
-    margin: 20px auto;
-    opacity: 100% ;//
-}
-/*
 
