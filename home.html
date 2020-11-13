@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
-    <nav class="navigasi" navbar-fixed-stop>
+    <nav class="navigasi" navbar-fixed-stop> 
         <img src="file gambar/logoo.png" class="logo">
         <div class="navigasi-wrap">
             <div class="navigasi-logo"></div>
@@ -18,10 +18,36 @@
                 <a href="tripNow.html" class="navbar-link">TRIP NOW</a>
                 <a href="kontak.html" class="navbar-link">CONTACT</a>
                 <a href="gallery.html" class="navbar-link">GALLERY</a>
-                <a href="" class="navbar-link">SIGN IN</a>
+                <a nohref  onclick="openForm()" class="navbar-link">SIGN IN</a>
             </div>
         </div>
     </nav>
+
+    <div class="pop-up-form" id="login-popup">
+        <form class="box-popup">
+            <div class="header">
+                <h4>LOGIN</h4>
+                <p>Djalan - djalan, welcome to wonderful of Indonesia</p>
+            </div>
+            <div class="login-area">
+                <input type="text" class="username" placeholder="Username">
+                <input type="password" class="password" placeholder="Password">
+                <input type="submit" value="Login" class="submit" onclick="closeForm()">
+                <a href="#">Forget your password </a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("login-popup").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+}
+    </script>
+
+
     <div class="background">
         <h2>VACATION WITH MINIMUM EFFORTS BUT MAXIMUM SERVICE</h2>
         <div class="box">

@@ -72,7 +72,7 @@ body{
 	background-color: #598BA4;
 }
 
-a{
+.login-area>a{
 	display: block;
 	font-size: x-small;
 	text-decoration: none;
