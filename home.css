@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap');
-*{
+body{
+    font-size: 18px; 
     margin: 0;
     padding: 0;
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -329,5 +330,91 @@ h1{
 #follow-us-logo{
 	width: 30px;
 	margin-left: 20px;
+}
+
+/*style pop up login*/
+
+.pop-up-form{
+    display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+}
+.box-popup{
+	position: fixed;
+	text-align: center;
+	width: 350px;
+	background-color: #598BA4;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5%;
+	box-shadow: 0 10px 10px 10px rgb(0, 0, 0, .2);
+}
+.header{
+	color: #0C3757;
+	font-size: 22px;
+	font-family: 'M Plus Rounded 1c', sans-serif;
+}
+.header p{
+	font-size: medium;
+}
+.login-area{
+	text-align: center;
+	padding: 50px 50px 30px 50px;
+}
+.username,
+.password{
+	width: 100%;
+	text-align: center;
+	padding: 13px 0;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: #B7D9E2;
+	margin-bottom: 15px;
+	transition: .5s;
+}
+.username::placeholder,
+.password::placeholder{
+	color: #0C3757;
+}
+.username:focus,
+.password:focus{
+	background-color: #114266;
+}
+.submit {
+	width: 150px;
+	padding: 10px;
+	background-color: #0C3757;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #B7D9E2;
+	border: none;
+	outline: none;
+	margin: 10px;
+	transition: .2s;
+	cursor: pointer;
+}
+.submit:hover{
+	background-color: #598BA4;
+}
+
+.isi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-area>a{
+	display: block;
+	font-size: x-small;
+	text-decoration: none;
+	color: #0C3757;
+	margin-top: 2px;
 }
 

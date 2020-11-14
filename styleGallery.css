@@ -3,7 +3,13 @@
 :root {
     --white: #ffffff;
 }
-
+.logo{
+    position: left;
+    width: 150px;
+    height: 50px;
+    padding-left: 8%;
+    margin: 20px;
+}
 {
     margin: 0;
     padding: 0;
@@ -33,7 +39,6 @@ body{
 	justify-content:flex-end;
 	font-weight: bolder;
 	padding-right:8px;
-
 }
 .navigasi-tulisan>a{
 	margin:20px;
