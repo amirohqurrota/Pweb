@@ -6,71 +6,103 @@
     <title>Document</title>
     <link rel="stylesheet" href="stylefromTripNow.css">
 </head>
+<script>
+    function welcome(){
+        document.getElementById("welcome").style.display= "block";
+    }
+    function openForm() {
+        document.getElementById("login-popup").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("login-popup").style.display = "none";
+        document.getElementById("nav-signin").style.display = "none";
+        welcome();  
+    }
+</script>
 <body>
     <nav class="navigasi" navbar-fixed-stop>
-        <div class="navigasi-tulisan">
-            <a href="" class="navbar-link">Djalan Djalan</a>
-            <a href="" class="navbar-link">HOME</a>
-            <a href="" class="navbar-link">PRICING</a>
-            <a href="" class="navbar-link">REQUEST</a>
-            <a href="" class="navbar-link">TRAVEL TIPS</a>
-            <a href="" class="navbar-link">TRIP NOW</a>
-            <a href="" class="navbar-link">CONTACT</a>
-            <a href="" class="navbar-link">GALLERY</a>
-            <a href="" class="navbar-link">SIGN IN</a>
-
-        </div>
+		<div class="navigasi-wrap">
+			<div class="navigasi-logo">
+				<img src="file gambar/logoo.png" alt="Djalan-djalan" id="image-navigasi">
+			</div>
+			<div class="navigasi-tulisan">
+				<a href="home.html" >HOME</a>
+				<a href="" class="">PRICING</a>
+				<a href="artikel.html" class="nav-aktif">TRAVEL TIPS</a>
+				<a href="gallery.html" class="">GALLERY</a>
+				<a href="fromTripNow.html" class="">TRIP NOW</a>
+				<a href="home.html#about" class="">ABOUT</a>
+				<a href="home.html#contact" class="">CONTACT</a>
+				<a nohref  onclick="openForm()" id="nav-signin">SIGN IN</a>
+				<a nohref id="welcome">Welcome Amiroh!</a>
+			</div>
+		</div>
     </nav>
-    <div class="gambar-navbar">
-        <img src="file gambar/INGLE_INTERNATIONAL_TRAVEL_INSURANCE-544598520.jpg" alt="Travelling">
 
+	<div class="pop-up-form" id="login-popup">
+        <form class="box-popup">
+            <div class="header">
+                <h4>LOGIN</h4>
+                <p>Djalan - djalan, welcome to wonderful of Indonesia</p>
+            </div>
+            <div class="login-area">
+                <input type="text" class="username" placeholder="Username">
+                <input type="password" class="password" placeholder="Password">
+                <input type="submit" value="Login" class="submit" onclick="closeForm()">
+                <a href="#">Forget your password </a>
+            </div>
+        </form>
     </div>
-    <div class="header-gambar">
-        <h1 class="heading">PLAN YOUR TRIP</h1>
-        <h2 class="heading">WITH US!</h2>
 
+    <div class="header-gambar">
+        <div class="header-tulisan">
+            <h1 class="heading">PLAN YOUR TRIP</h1>
+            <h2 class="heading">WITH US!</h2>
+         </div>
     </div>
 
     <div class="header1">
         <h2>Get best vacation with a best price and best service  </h2>
         <h7>Maybe you need help with vacation planning, honeymoon travel, tour packages, families holiday.<br>
-            Whatever your need, we can help! No worries. Join and make best experience with us. </h7>
+            Whatever your need, we can help! No worries. Join and make best experience with us. </h7> <br><br>
+        <h8>Please, fill in the following data correctly.</h8>
     </div>
 
     <div class="isian">
+        <h8 id="required">*All Field are required</h8>
         <form >
             <div class="wrap-form">
                 <div class="form">
                     <li >First Name</li>
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="First Name" id="coloumn-3">
                 </div>
                 <div class="form">
                     <li >Last Name</li>
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="First Name" id="coloumn-3">
                 </div>
                 <div class="form">
                     <li >Telephone</li>
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="First Name" id="coloumn-3">
                 </div>
             </div>
             <div class="wrap-form">
                 <div class="form">
                     <li >Address</li>
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="First Name" id="coloumn-3">
                 </div>
                 <div class="form">
                     <li >Zip Code</li>
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="First Name" id="coloumn-3">
                 </div>
                 <div class="form">
                     <li >Country</li>
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="First Name" id="coloumn-3">
                 </div>
             </div>
             <div class="wrap-form">
                 <div class="form">
                     <li >Email Address</li>
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Email Address" id="email">
                 </div>
             </div>
 
@@ -97,7 +129,7 @@
                 </div>
                 <div class="form">
                     <li >Destination</li>
-                    <input type="text" placeholder="Destination">
+                    <input type="text" placeholder="Destination" id="coloumn-3">
                 </div>
             </div>
 
@@ -107,7 +139,7 @@
                     <input type="text" placeholder="From City">
                 </div>
                 <div class="form">
-                    <li class="transparan">aa</li>
+                    <li class="transparan">a</li>
                     <input type="text" placeholder="From State">
                 </div>
                 <div class="form">
@@ -153,18 +185,61 @@
             <div class="wrap-form">
                 <div class="form-paragraph">
                     <li >Request What Your Need</li>
-                    <input type="text" placeholder="ex: Pick me up at the airport">
+                    <textarea name="paragraph_text" cols="150" rows="10" placeholder="ex: Pick me up at the airport"></textarea>
+
                 </div>
             </div>
 
-            
-
-            <div >
-                <input type="button" value="Trip Now"    >
+            <div class="button-wrap" >
+                <input type="button" value="Trip Now" class="button" >
             </div>
-
         </form>
     </div>
+
+    <div class="bottom">
+		<div class="bottom-baris-satu">
+			<div class="etc">
+				<ul class="etc-li">
+					<li ><a href="">Contact Us</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Advertisement Opportunities</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Terms Of Use</a></li>
+					<li><a href=""> Press Inquires</a></li>
+				</ul>
+			</div>
+	
+			<div class="bottom-login">
+				<p>LOGIN</p>
+				<label for="username">Username or Email <Address></Address></label>
+				<input type="text" id="username">
+				<label for="password"> Password</label>
+				<input type="password" id="password">
+				<div>
+					<input type="checkbox" name="remember-me" id="remember-me">
+					<label for="remember-me">Remember Me</label>
+				</div>
+                <input type="submit" value="Login" id="submit-login-bottom">
+				 
+			</div>
+		</div>
+		<div class="follow-us">
+			<p>follow us on :</p>
+			<div class="follow-us-wrap-logo">
+				<a href="instagram.com" ><img src="file gambar/logo-instagram.png" alt="" id="follow-us-logo"></a>
+				<a href="instagram.com" ><img src="file gambar/logo-google.png" alt="" id="follow-us-logo"></a>
+				<a href="instagram.com" ><img src="file gambar/logo-twitter.png" alt="" id="follow-us-logo"></a>
+				<a href="instagram.com" ><img src="file gambar/logo-facebook.png" alt="" id="follow-us-logo"></a>
+			</div>
+		</div>
+		
+		
+		<div class="bottom-logo">
+			<img src="file gambar/WhatsApp Image 2020-10-23 at 17.03.04.jpeg" alt="Djalan-djalan" id="image-bottom">
+			<p>Djalan-djalan Copyright 2020</p>
+		</div>
+	</div>
+
     
 </body>
 </html>

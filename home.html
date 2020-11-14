@@ -5,25 +5,40 @@
     <title>Welcome to Djalan Djalan</title>
     <link rel="stylesheet" type="text/css" href="home.css">
 </head>
+<script>
+    function welcome(){
+        document.getElementById("welcome").style.display= "block";
+    }
+    function openForm() {
+        document.getElementById("login-popup").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("login-popup").style.display = "none";
+        document.getElementById("nav-signin").style.display = "none";
+        welcome();  
+    }
+</script>
 <body>
-    <nav class="navigasi" navbar-fixed-stop> 
-        <img src="file gambar/logoo.png" class="logo">
-        <div class="navigasi-wrap">
-            <div class="navigasi-logo"></div>
-            <div class="navigasi-tulisan">
-                <a href="home.html" class="nav-aktif">HOME</a>
-                <a href="" >PRICING</a>
-                <a href="#about" >ABOUT</a>
-                <a href="travelTips.html" >TRAVEL TIPS</a>
-                <a href="tripNow.html" >TRIP NOW</a>
-                <a href="#contact" >CONTACT</a>
-                <a href="gallery.html" >GALLERY</a>
-                <a nohref  onclick="openForm()" >SIGN IN</a>
-            </div>
-        </div>
+    <nav class="navigasi" navbar-fixed-stop>
+		<div class="navigasi-wrap">
+			<div class="navigasi-logo">
+				<img src="file gambar/logoo.png" alt="Djalan-djalan" id="image-navigasi">
+			</div>
+			<div class="navigasi-tulisan">
+				<a href="home.html" >HOME</a>
+				<a href="" class="">PRICING</a>
+				<a href="artikel.html" class="nav-aktif">TRAVEL TIPS</a>
+				<a href="gallery.html" class="">GALLERY</a>
+				<a href="fromTripNow.html" class="">TRIP NOW</a>
+				<a href="home.html#about" class="">ABOUT</a>
+				<a href="home.html#contact" class="">CONTACT</a>
+				<a nohref  onclick="openForm()" id="nav-signin">SIGN IN</a>
+				<a nohref id="welcome">Welcome Amiroh!</a>
+			</div>
+		</div>
     </nav>
 
-    <div class="pop-up-form" id="login-popup">
+	<div class="pop-up-form" id="login-popup">
         <form class="box-popup">
             <div class="header">
                 <h4>LOGIN</h4>
@@ -38,14 +53,7 @@
         </form>
     </div>
 
-    <script>
-        function openForm() {
-            document.getElementById("login-popup").style.display = "block";
-        }
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-}
-    </script>
+
 
 
     <div class="background">
@@ -115,12 +123,12 @@
 		<div class="bottom-baris-satu">
 			<div class="etc">
 				<ul class="etc-li">
-					<li>Contact Us</li>
-					<li>About Us</li>
-					<li>Advertisement Opportunities</li>
-					<li>Privacy Policy</li>
-					<li>Terms Of Use</li>
-					<li>Press Inquires</li>
+					<li ><a href="">Contact Us</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Advertisement Opportunities</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Terms Of Use</a></li>
+					<li><a href=""> Press Inquires</a></li>
 				</ul>
 			</div>
 	

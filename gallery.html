@@ -5,24 +5,58 @@
 	<link rel="stylesheet" href="styleGallery.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
+<script>
+    function welcome(){
+        document.getElementById("welcome").style.display= "block";
+    }
+    function openForm() {
+        document.getElementById("login-popup").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("login-popup").style.display = "none";
+        document.getElementById("nav-signin").style.display = "none";
+        welcome();  
+    }
+</script>
 <body>
-	
-	<nav class="navigasi" navbar-fixed-stop>
-        <div class="navigasi-tulisan">
-            <a href="" class="navbar-link">HOME</a>
-            <a href="" class="navbar-link">PRICING</a>
-            <a href="" class="navbar-link">REQUEST</a>
-            <a href="artikel.html" class="navbar-link">TRAVEL TIPS</a>
-            <a href="fromTripNow.html" class="navbar-link">TRIP NOW</a>
-            <a href="" class="navbar-link">CONTACT</a>
-            <a href="gallery.html" class="navbar-link">GALLERY</a>
-            <a href="" class="navbar-link">SIGN IN</a>
-        </div>
+    <nav class="navigasi" navbar-fixed-stop>
+		<div class="navigasi-wrap">
+			<div class="navigasi-logo">
+				<img src="file gambar/logoo.png" alt="Djalan-djalan" id="image-navigasi">
+			</div>
+			<div class="navigasi-tulisan">
+				<a href="home.html" >HOME</a>
+				<a href="" class="">PRICING</a>
+				<a href="artikel.html" class="nav-aktif">TRAVEL TIPS</a>
+				<a href="gallery.html" class="">GALLERY</a>
+				<a href="fromTripNow.html" class="">TRIP NOW</a>
+				<a href="home.html#about" class="">ABOUT</a>
+				<a href="home.html#contact" class="">CONTACT</a>
+				<a nohref  onclick="openForm()" id="nav-signin">SIGN IN</a>
+				<a nohref id="welcome">Welcome Amiroh!</a>
+			</div>
+		</div>
     </nav>
+
+	<div class="pop-up-form" id="login-popup">
+        <form class="box-popup">
+            <div class="header">
+                <h4>LOGIN</h4>
+                <p>Djalan - djalan, welcome to wonderful of Indonesia</p>
+            </div>
+            <div class="login-area">
+                <input type="text" class="username" placeholder="Username">
+                <input type="password" class="password" placeholder="Password">
+                <input type="submit" value="Login" class="submit" onclick="closeForm()">
+                <a href="#">Forget your password </a>
+            </div>
+        </form>
+    </div>
+
 
 	<div class="gallery">
 		<div class="gallery-satuan">
-			<img src="file gambar/vasilios-muselimis-tKnWdagXQLE-unsplash.jpg" class="gambar-gallery">
+			<img src="file gambar/2019_07_19_76583_1563524479._medium.jpg" class="gambar-gallery">
 			<div class="tulisan-gallery">
 				<h2 class="tulisan-kiri">Gordon Ramsay</h2>
 				<h3 class="tulisan-kiri">Cullinary Travelling in Palembang</h3>
@@ -32,22 +66,72 @@
 
 		<div class="gallery-satuan">
 			<div class="tulisan-gallery-kiri">
-				<h2 class="tulisan-kanan">Gordon Ramsay</h2>
-				<h3 class="tulisan-kanan">Cullinary Travelling in Palembang</h3>
-				<p class="tulisan-kanan">“I’am a Professional Chef. This year My team and me do a research for my portofolio and for our new menu in our restaurant. Djalan Djalan make our research not boring at all, Our Research totally like  vacation and holiday.”</p>
+				<h2 class="tulisan-kanan">Catherine Sukirman</h2>
+				<h3 class="tulisan-kanan">Nature Travelling in Raja Ampat</h3>
+				<p class="tulisan-kanan">“I completed my adventure with Djalan Djalan exploring Raja ampat and west Papua. I lived on a pirate ship for a full week and managed to get the most insane footage above and under water 💦💦 Thank you sooo much to Djalan Djalan for making my amazing trip”</p>
 			</div>
-			<img src="file gambar/vasilios-muselimis-tKnWdagXQLE-unsplash.jpg" class="gambar-gallery">
+			<img src="file gambar/58EA667D-A6FB-4EAD-B808-AB89B900CC8A-1024x747.jpg" class="gambar-gallery">
 		</div>
 
 		<div class="gallery-satuan">
-			<img src="file gambar/vasilios-muselimis-tKnWdagXQLE-unsplash.jpg" class="gambar-gallery">
+			<img src="file gambar/IMG_1617-2.jpg" class="gambar-gallery">
 			<div class="tulisan-gallery">
-				<h2 class="tulisan-kiri">Gordon Ramsay</h2>
-				<h3 class="tulisan-kiri">Cullinary Travelling in Palembang</h3>
+				<h2 class="tulisan-kiri">Putra Mahkota Sijabat</h2>
+				<h3 class="tulisan-kiri">Natural Travelling in Bandung</h3>
 				<p class="tulisan-kiri">“I’am a Professional Chef. This year My team and me do a research for my portofolio and for our new menu in our restaurant. Djalan Djalan make our research not boring at all, Our Research totally like  vacation and holiday.”</p>
 			</div>
 		</div>		
 	</div>
+
+	<div class="more-tips">
+		<a href="">more...</a>
+	</div>
+
+		<div class="bottom">
+		<div class="bottom-baris-satu">
+			<div class="etc">
+				<ul class="etc-li">
+					<li ><a href="">Contact Us</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Advertisement Opportunities</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Terms Of Use</a></li>
+					<li><a href=""> Press Inquires</a></li>
+				</ul>
+			</div>
+	
+			<div class="bottom-login">
+				<p>LOGIN</p>
+				<label for="username">Username or Email <Address></Address></label>
+				<input type="text" id="username">
+				<label for="password"> Password</label>
+				<input type="password" id="password">
+				<div>
+					<input type="checkbox" name="remember-me" id="remember-me">
+					<label for="remember-me">Remember Me</label>
+				</div>
+                <input type="submit" value="Login" id="submit-login-bottom">
+				 
+			</div>
+		</div>
+		<div class="follow-us">
+			<p>follow us on :</p>
+			<div class="follow-us-wrap-logo">
+				<a href="instagram.com/amirohqurrota" ><img src="file gambar/logo-instagram.png" alt="" id="follow-us-logo"></a>
+				<a href="www.instagram.com" ><img src="file gambar/logo-google.png" alt="" id="follow-us-logo"></a>
+				<a href="instagram.com" ><img src="file gambar/logo-twitter.png" alt="" id="follow-us-logo"></a>
+				<a href="instagram.com" ><img src="file gambar/logo-facebook.png" alt="" id="follow-us-logo"></a>
+			</div>
+		</div>
+		
+		
+		<div class="bottom-logo">
+			<img src="file gambar/WhatsApp Image 2020-10-23 at 17.03.04.jpeg" alt="Djalan-djalan" id="image-bottom">
+			<p>Djalan-djalan Copyright 2020</p>
+		</div>
+		
+	</div>
+
 
 </body>
 </html>

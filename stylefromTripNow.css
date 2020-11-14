@@ -4,30 +4,165 @@
     --white: #ffffff;
 }
 
-{
-    margin: 0;
-    padding: 0;
-}
+
 body{
     font-family: 'M Plus Rounded 1c', sans-serif;
     background-color: var(--white);
+    margin: 0px;
+    padding: 0px;
+}
+/*navigasi*/
+.navigasi{
+	position: fixed;
+	background-color:rgba(240, 252, 254, 1);
+	width: 100%;
+	max-height: 60px;
+}
+.navigasi-wrap{
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	
 }
 .navigasi-tulisan{
-    text-align: left;
-    display: flex;
-    justify-content:flex-end;
-    font-weight: bolder;
-    padding:10px;
-    padding-right:8px;
+	text-align: left;
+	display: flex;
+	justify-content:flex-end;
+	font-weight: bolder;
+	padding-right:8px;
 
 }
 .navigasi-tulisan>a{
-    margin:20px;
-    color:rgba(12, 55, 86, 1);
+	margin:20px;
+	padding: 5px;
+	border-radius: 5px;
+	color:rgba(12, 55, 86, 1);
+	text-decoration: none;
+	cursor: pointer;
+}
+input[type="button"]{
+    cursor: pointer;
+}
+.navigasi-logo{
+	height: 50px;
+	padding-left: 50px;
+}
+#image-navigasi{
+	height: 100%;
+}
+#welcome{
+	display: none;
+}
+.nav-aktif{
+	background: #e2e9ee;
+	transition: .5s;
 }
 
+/*style pop up login*/
+
+.pop-up-form{
+    display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+}
+.box-popup{
+	position: fixed;
+	text-align: center;
+	width: 350px;
+	background-color: #598BA4;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5%;
+	box-shadow: 0 10px 10px 10px rgb(0, 0, 0, .2);
+}
+.header{
+	color: #0C3757;
+	font-size: 22px;
+	font-family: 'M Plus Rounded 1c', sans-serif;
+}
+.header p{
+	font-size: medium;
+}
+.login-area{
+	text-align: center;
+	padding: 50px 50px 30px 50px;
+}
+.username,
+.password{
+	width: 100%;
+	text-align: center;
+	padding: 13px 0;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	color: white;
+	background-color: #B7D9E2;
+	margin-bottom: 15px;
+	transition: .5s;
+}
+.username::placeholder,
+.password::placeholder{
+	color: #0C3757;
+}
+.username:focus,
+.password:focus{
+	background-color: #114266;
+}
+.submit {
+	width: 150px;
+	padding: 10px;
+	background-color: #0C3757;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #B7D9E2;
+	border: none;
+	outline: none;
+	margin: 10px;
+	transition: .2s;
+	cursor: pointer;
+}
+.submit:hover{
+	background-color: #598BA4;
+}
+
+.login-area>a{
+	display: block;
+	font-size: x-small;
+	text-decoration: none;
+	color: #0C3757;
+	margin-top: 2px;
+}
+
+
+/*gambar header*/
 .header-gambar{
-     margin-top: -100px;
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 50px;
+    background-image: url("file gambar/matheus-bandoch-Wj76BhHrGG0-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+
+}
+
+.header-tulisan{
+    display: grid;
+    align-items: center;
+    padding-left: 100px;
+    font-size: 30px;
+ }
+ .heading{
+     padding: 0;
+     margin: 0;
  }
 .header1{
     margin-left: 90px;
@@ -37,6 +172,26 @@ body{
 }
 .header1>.h7{
     max-width: 850px;
+}
+.isian{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 1000px;
+    border-top: 5px solid  rgba(12, 55, 86, 1);
+    border-radius: 20px;
+    width: 1150px;
+    max-height: fit-content;
+    margin:auto;
+    background-color:rgba(183, 217, 226, 0.5); 
+}
+
+.isian>form{
+    padding-top: 30px;
+}
+.isian>h8{
+    font-weight: bold;
+
 }
 
 .wrap-form{
@@ -56,7 +211,6 @@ body{
     min-width: 250px;
 }
 
-
 .transparan{
     opacity: 0%;
 }
@@ -65,62 +219,122 @@ body{
     list-style-type: none;
     font-weight: bold;
 }
-,.form-paragraph>input{
-    width: 100%;
-    height: 70px;
+
+.button-wrap{
+    display: flex;
+    justify-content: flex-end;
 }
-
-
+.button>input[type]{
+    cursor: pointer;
+}
 .button{
     background-color: rgb(71, 92, 119);
+    width: 100px;
     border: black;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 110%;
     border-radius: 10px;
     height: 30px;
-    margin-top: 100px;
-    margin-left : 800px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-right : 70px;
     text-align: center;
 }
-.isian{
-    padding: 20px;
-    margin-top: 1000px;
-    border-top: 5px solid  rgba(12, 55, 86, 1);
-    border-radius: 20px;
-    width: 1150px;
-    height: 800px;
-    margin:auto;
-    background-color:rgba(183, 217, 226, 0.5); 
+
+input[type="text"],input[type="date"],select{
+    border-radius: 5px;
+    height:25px;
+    border-width: 1px;
 }
-.isian>form{
-    position: relative;
-    padding-top: 50 px;
+textarea{
+    border-radius: 7px;
+    border-width: 1px;
+}
+select,#coloumn-3{
+    min-width: 330px;
+}
+#email{
+    min-width: 1060px;
 }
 
-/*
-
-.tulisan>ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
-.tulisan>ul>li{
-
+/*style bottom*/
+.bottom{
+	width: 100%;
+	min-height: fit-content;
+	background-color: rgba(12, 55, 86, 1);
+	margin-top: 200px;
+	color: white;
 }
 
-.tulisan{
-    width: 90% ;
-    position: relative; 
-    font-weight: bolder;
+.bottom-baris-satu{
+	display: flex;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
+	justify-content: space-between;
+}
+.etc{
+	width: 850px;
 }
 
-.input{
-    display: flex;
-    justify-content: space-between;
-    width: 90% ;
-    position: relative;
-    margin: 20px auto;
-    opacity: 100% ;//
+.etc-li{
+	list-style-type: none;
+	padding: 0px;
+    margin: 0px;
+
 }
-/*
+.etc-li>li>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.bottom-login{
+	display: grid;
+}
+#image-bottom{
+	width: 300px;
+	border-radius: 5px;
+	margin-bottom: 0px;
+}
+
+.bottom-logo{
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	margin-top: -40px;
+	
+}
+#submit-login-bottom{
+	display: flex;
+	background-color:rgba(118, 169, 255, 1);
+	border-radius: 5px;
+	border-width: 0px;
+	width: 50%;
+	justify-content: center;
+	justify-self: flex-end;
+	margin-top: 15px;
+
+}
+.follow-us{
+	text-align: center;
+	max-width: fit-content;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left: 50px;
+
+}
+.follow-us-wrap-logo{
+	display: flex;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#follow-us-logo{
+	width: 30px;
+	margin-left: 20px;
+}
+
+
+
 

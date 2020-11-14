@@ -6,22 +6,53 @@
     <link rel="stylesheet" href="styleArtikelSatuan.css">
     <title>artikelSatuan</title>
 </head>
+<script>
+    function welcome(){
+        document.getElementById("welcome").style.display= "block";
+    }
+    function openForm() {
+        document.getElementById("login-popup").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("login-popup").style.display = "none";
+        document.getElementById("nav-signin").style.display = "none";
+        welcome();  
+    }
+</script>
 <body>
     <nav class="navigasi" navbar-fixed-stop>
 		<div class="navigasi-wrap">
-			<div class="navigasi-logo"></div>
+			<div class="navigasi-logo">
+				<img src="file gambar/logoo.png" alt="Djalan-djalan" id="image-navigasi">
+			</div>
 			<div class="navigasi-tulisan">
-				<a href="" class="navbar-link">HOME</a>
-				<a href="" class="navbar-link">PRICING</a>
-				<a href="" class="navbar-link">REQUEST</a>
-				<a href="artikel.html" class="navbar-link">TRAVEL TIPS</a>
-				<a href="fromTripNow.html" class="navbar-link">TRIP NOW</a>
-				<a href="" class="navbar-link">CONTACT</a>
-				<a href="gallery.html" class="navbar-link">GALLERY</a>
-				<a href="" class="navbar-link">SIGN IN</a>
+				<a href="home.html" >HOME</a>
+				<a href="" class="">PRICING</a>
+				<a href="artikel.html" class="nav-aktif">TRAVEL TIPS</a>
+				<a href="gallery.html" class="">GALLERY</a>
+				<a href="fromTripNow.html" class="">TRIP NOW</a>
+				<a href="home.html#about" class="">ABOUT</a>
+				<a href="home.html#contact" class="">CONTACT</a>
+				<a nohref  onclick="openForm()" id="nav-signin">SIGN IN</a>
+				<a nohref id="welcome">Welcome Amiroh!</a>
 			</div>
 		</div>
     </nav>
+
+	<div class="pop-up-form" id="login-popup">
+        <form class="box-popup">
+            <div class="header">
+                <h4>LOGIN</h4>
+                <p>Djalan - djalan, welcome to wonderful of Indonesia</p>
+            </div>
+            <div class="login-area">
+                <input type="text" class="username" placeholder="Username">
+                <input type="password" class="password" placeholder="Password">
+                <input type="submit" value="Login" class="submit" onclick="closeForm()">
+                <a href="#">Forget your password </a>
+            </div>
+        </form>
+    </div>
 
 	<div class="subscription">
 		<div class="wrap-subscription">
@@ -96,12 +127,12 @@
 		<div class="bottom-baris-satu">
 			<div class="etc">
 				<ul class="etc-li">
-					<li>Contact Us</li>
-					<li>About Us</li>
-					<li>Advertisement Opportunities</li>
-					<li>Privacy Policy</li>
-					<li>Terms Of Use</li>
-					<li>Press Inquires</li>
+					<li ><a href="">Contact Us</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Advertisement Opportunities</a></li>
+					<li><a href="">Privacy Policy</a></li>
+					<li><a href="">Terms Of Use</a></li>
+					<li><a href=""> Press Inquires</a></li>
 				</ul>
 			</div>
 	
