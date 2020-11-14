@@ -287,6 +287,10 @@ a:link {
 	padding: 0px;
 	margin: 0px;
 }
+.etc-li>li>a{
+    text-decoration: none;
+	color: whitesmoke;
+}
 .bottom-login{
 	display: grid;
 }
