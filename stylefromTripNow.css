@@ -3,8 +3,6 @@
 :root {
     --white: #ffffff;
 }
-
-
 body{
     font-family: 'M Plus Rounded 1c', sans-serif;
     background-color: var(--white);
