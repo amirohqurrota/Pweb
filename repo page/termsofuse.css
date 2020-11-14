@@ -9,7 +9,6 @@ body{
     width: 100%;
 }
 .terms{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -37,6 +36,13 @@ body{
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
+}
+.etc-li>li>a{
+    text-decoration: none;
+	color: whitesmoke;
+}
+.etc-li>li>a:hover{
+	color: grey;
 }
 .bottom-login{
 	display: grid;
@@ -124,4 +130,7 @@ body{
     height: 50px;
     padding-left: 8%;
     margin: 20px;
+}
+.nav-signin{
+	display: none;
 }

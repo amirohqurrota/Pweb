@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap');
 body{
-    background-color: #B7D9E2;
+	background-color: #B7D9E2;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -8,7 +9,6 @@ body{
     width: 100%;
 }
 .privacy{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -36,6 +36,13 @@ body{
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
+}
+.etc-li>li>a{
+    text-decoration: none;
+	color: whitesmoke;
+}
+.etc-li>li>a:hover{
+	color: grey;
 }
 .bottom-login{
 	display: grid;
