@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+}
+
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'M Plus Rounded 1c', sans-serif;
+	background-color: rgba(240, 252, 254, 1);
+	padding: 0;
+	margin: 0;
+}
+.navigasi{
+	position: fixed;
+	background-color:rgba(240, 252, 254, 1);
+	width: 100%;
+	max-height: 60px;
+}
+.navigasi-wrap{
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.navigasi-tulisan{
+	text-align: left;
+	display: flex;
+	justify-content:flex-end;
+	font-weight: bolder;
+	padding-right:8px;
+
+}
+.navigasi-tulisan>a{
+	margin:20px;
+	padding: 5px;
+	border-radius: 5px;
+	color:rgba(12, 55, 86, 1);
+	text-decoration: none;
+	cursor: pointer;
+}
+.navigasi-logo{
+	height: 50px;
+	padding-left: 50px;
+}
+#image-navigasi{
+	height: 100%;
+}
+#welcome{
+	display: none;
+}
+.nav-aktif{
+	background: #e2e9ee;
+	transition: .5s;
+}
+input[type="button"]{
+    cursor: pointer;}
+
+
+.navigasi-tulisan>a:hover{
+    color: grey;
+}
+/*artikel utama*/
+.pricing-utama{
+    margin: 0;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    display: flex;
+}
+.explore{
+    width: 30%;
+}
+.explore-satuan>li>a{
+    text-decoration: none;
+    color: rgba(12, 55, 86, 1);
+}
+.explore-satuan>li{
+    list-style-type: none;
+}
+
+.explore-satuan>li>a:hover{
+    color: grey;
+}
+#judul-explore{
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgba(12, 55, 86, 1);
+}
+#explore-active{
+    text-decoration: underline;
+}
+
+/*galeri-pricing*/
+.wrap-galeri-pricing{
+    display: grid;
+    width: 70%;
+    padding: 10px;
+}
+.sebaris{
+    display: flex;
+    margin-bottom: 50px;
+}
+.pricing-satuan{
+    min-width: 30%;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+}
+.image-pricing{
+    min-width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0px;
+}
+#image-pricing{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-position: center;
+    object-fit: cover;
+
+}
+.tulisan{
+    padding: 0;
+}
+#title-pricing,#see-more,#paragraf,#pricing-text{
+    margin: 0;
+    padding: 0px;
+}
+#paragraf{
+    font-size: smaller;
+}
+#see-more{
+    font-size: smaller;
+    color: grey;
+}
+
+.bottom{
+	width: 100%;
+	min-height: fit-content;
+	background-color: rgba(12, 55, 86, 1);
+	margin-top: 200px;
+	color: white;
+}
+
+.bottom-baris-satu{
+	display: flex;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
+	justify-content: space-between;
+}
+.etc{
+	width: 850px;
+}
+
+.etc-li{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.etc-li>li>a{
+    text-decoration: none;
+	color: whitesmoke;
+}
+.bottom-login{
+	display: grid;
+}
+#image-bottom{
+	width: 300px;
+	border-radius: 5px;
+	margin-bottom: 0px;
+}
+
+.bottom-logo{
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	margin-top: -40px;
+	
+}
+#submit-login-bottom{
+	display: flex;
+	background-color:rgba(118, 169, 255, 1);
+	border-radius: 5px;
+	border-width: 0px;
+	width: 50%;
+	justify-content: center;
+	justify-self: flex-end;
+	margin-top: 15px;
+}
+.follow-us{
+	text-align: center;
+	max-width: fit-content;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-left: 50px;
+}
+.follow-us-wrap-logo{
+	display: flex;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#follow-us-logo{
+	width: 30px;
+	margin-left: 20px;
+}

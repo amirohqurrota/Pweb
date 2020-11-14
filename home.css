@@ -149,9 +149,6 @@ input[type="button"]{
 	color: #0C3757;
 	margin-top: 2px;
 }
-
-
-
 .header-left{
     height: 12%;
     display: flex;
@@ -257,6 +254,8 @@ h1{
     margin-bottom: 20px;
 
 }
+
+/*bottom*/
 
 .bottom{
 	width: 100%;
