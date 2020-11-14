@@ -9,7 +9,7 @@ body{
     background-size: cover;
     background-position: center;
     color: #0C3756;
-    background-image: url("file gambar/background\ \(1\).jpg");
+    background-image: url("repo page/file gambar/background\ \(1\).jpg");
     height: 100vh;
     display: flex;
     align-items: center;
@@ -201,7 +201,7 @@ input[type="button"]{
 }
 
 .about-us{
-    background-image: url("file gambar/about.jpg");
+    background-image: url("repo page/file gambar/about.jpg");
     background-size: cover;
     background-position: 0 100%;
     width: 100vw;
@@ -238,7 +238,7 @@ h1{
     position: center;
 }
 .kontak{
-    background-image: url("file gambar/contact.jpg");
+    background-image: url("repo page/file gambar/contact.jpg");
     background-size: cover;
     background-position: 0 100%;
     width: 100vw;
