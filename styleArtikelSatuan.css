@@ -43,6 +43,9 @@ body{
 	text-decoration: none;
 	cursor: pointer;
 }
+.navigasi-tulisan>a:hover{
+    color: grey;
+}
 .navigasi-logo{
 	height: 50px;
 	padding-left: 50px;

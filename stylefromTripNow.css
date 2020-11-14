@@ -38,6 +38,9 @@ body{
 	text-decoration: none;
 	cursor: pointer;
 }
+.navigasi-tulisan>a:hover{
+    color: grey;
+}
 input[type="button"]{
     cursor: pointer;
 }
