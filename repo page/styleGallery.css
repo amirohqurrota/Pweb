@@ -242,7 +242,10 @@ a:link {
 }
 .etc-li>li>a{
     text-decoration: none;
-    color: whitesmoke;
+	color: whitesmoke;
+}
+.etc-li>li>a:hover{
+	color: grey;
 }
 .bottom-login{
 	display: grid;

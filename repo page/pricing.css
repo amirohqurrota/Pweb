@@ -172,6 +172,9 @@ input[type="button"]{
     text-decoration: none;
 	color: whitesmoke;
 }
+.etc-li>li>a:hover{
+	color: grey;
+}
 .bottom-login{
 	display: grid;
 }
