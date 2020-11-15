@@ -157,7 +157,6 @@ input[type="button"]{
 
 .header-tulisan{
     display: grid;
-    align-items: center;
     padding-left: 100px;
     font-size: 30px;
  }
@@ -178,7 +177,6 @@ input[type="button"]{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    margin-top: 1000px;
     border-top: 5px solid  rgba(12, 55, 86, 1);
     border-radius: 20px;
     width: 1150px;
@@ -231,7 +229,6 @@ input[type="button"]{
 .button{
     background-color: rgb(71, 92, 119);
     width: 100px;
-    border: black;
     font-weight: bolder;
     font-size: 110%;
     border-radius: 10px;
