@@ -212,10 +212,8 @@ input[type="button"]{
     background-color: white;
     width: 100vw;
     opacity: 70%;
-    display:flex;
     padding: 20px;
     align-items: center;
-    flex-direction: column;
     padding-right: 8%;
     padding-left: 8%;
 }
@@ -230,19 +228,13 @@ h1{
     text-align: center;
     font-size: 30px;
 }
-.atas{
-    text-align: center;
-    width: 150px;
-    height: 50px;
-    position: center;
-}
 .kontak{
     background-image: url("repo page/file gambar/contact.jpg");
     background-size: cover;
     background-position: 0 100%;
     width: 100vw;
-    height: 100vh;
-    display: flex;
+	height: 100vh;
+	display: flex;
     align-items: center;
 }
 .isi>img{
@@ -251,7 +243,6 @@ h1{
 }
 .isi{
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
 
@@ -269,8 +260,6 @@ h1{
 
 .bottom-baris-satu{
 	display: flex;
-	margin-left: 30px;
-	margin-right: 30px;
 	padding-top: 50px;
 	padding-left: 75px;
 	padding-right: 75px;
@@ -299,7 +288,6 @@ h1{
 
 .bottom-logo{
 	display: grid;
-	justify-content: center;
 	justify-items: center;
 	margin-top: -40px;
 	
@@ -350,14 +338,12 @@ h1{
 	background-color: #598BA4;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	border-radius: 5%;
 	box-shadow: 0 10px 10px 10px rgb(0, 0, 0, .2);
 }
 .header{
 	color: #0C3757;
 	font-size: 22px;
-	font-family: 'M Plus Rounded 1c', sans-serif;
 }
 .header p{
 	font-size: medium;
@@ -372,7 +358,6 @@ h1{
 	text-align: center;
 	padding: 13px 0;
 	border-radius: 20px;
-	outline: none;
 	border: none;
 	color: white;
 	background-color: #B7D9E2;
@@ -403,14 +388,6 @@ h1{
 .submit:hover{
 	background-color: #598BA4;
 }
-
-.isi{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 .login-area>a{
 	display: block;
 	font-size: x-small;
