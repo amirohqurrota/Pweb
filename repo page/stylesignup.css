@@ -11,7 +11,7 @@ body{
 	position: absolute;
 	top: 0;
 }
-.box{
+.form{
 	position: absolute;
 	text-align: center;
 	width: 350px;
@@ -71,11 +71,55 @@ body{
 .submit:hover{
 	background-color: #598BA4;
 }
-
 .login-area>a{
 	display: block;
 	font-size: x-small;
 	text-decoration: none;
 	color: #0C3757;
 	margin-top: 2px;
+}
+.background-modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.box{
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 25%;
+	background-color: #fff;
+	padding:  15px;
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+	overflow: auto;
+}
+.box p{
+	text-align: center;
+}
+.box h2{
+	text-align: center;
+	margin-bottom: 120px;
+	font-size: 30px;
+	color: #0C3757;
+}
+.close p{
+	background-color: grey;
+	color:black;
+	font-size: 40px;
+	padding: 0 5px;
+	cursor: pointer;
+
+}
+.close{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
 }
