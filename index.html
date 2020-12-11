@@ -15,8 +15,37 @@
     function closeForm() {
         document.getElementById("login-popup").style.display = "none";
         document.getElementById("nav-signin").style.display = "none";
-        welcome();  
+        
     }
+
+    function openModal() {
+        document.getElementById("background-modal").style.display = "flex";
+
+        document.getElementById("box-modal").style.display = "flex";
+
+    }
+
+    function closeModal() {
+        document.getElementById("background-modal").style.display = "none";
+        document.getElementByIde("box-modal").style.display = "none";
+    }
+
+   /*  bentar-gausa pake ini dulu */
+/*     function login() {
+        openModal();
+        username = document.getElementById("username").value;
+        password = document.getElementById("password").value;
+    if (username == 'amiroh' && password== '123') {
+        document.getElementsByClassName("usernameValue").style.display = "block";
+        openModal();
+        } 
+    else {
+        closeModal();
+        modalHeading.innerText = `Try again, invalid username or password!`;
+        openModal();
+        }
+    } */
+
 </script>
 <body>
     <nav class="navigasi" navbar-fixed-stop>
@@ -45,12 +74,23 @@
                 <p>Djalan - djalan, welcome to wonderful of Indonesia</p>
             </div>
             <div class="login-area">
-                <input type="text" class="username" placeholder="Username">
-                <input type="password" class="password" placeholder="Password">
-                <input type="submit" value="Login" class="submit" onclick="closeForm()">
+                <input type="text" class="username" id="username" placeholder="Username">
+                <input type="password" class="password" id="password" placeholder="Password">
+                <input type="submit" value="Login" class="submit" onclick="openModal()" >
                 <a href="#">Forget your password </a>
             </div>
         </form>
+    </div>
+
+    <div id="background-modal">
+        <div id="box-modal">
+            <div class="close">
+                <p id="logo-x" onclick="closeForm(); welcome(); closeModal(); ">&times;</p>
+                <div id="usernameValue">
+                    <h3 >Wellcome back!</h3>
+                </div> 
+            </div>
+        </div>
     </div>
 
     <div class="background">
