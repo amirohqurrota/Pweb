@@ -87,9 +87,11 @@ body{
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.4);
+	padding: 0;
+	margin: 0;
 }
 .box{
+	
 	display: none;
 	flex-direction: column;
 	justify-content: center;
@@ -97,29 +99,40 @@ body{
 	width: 20%;
 	height: 25%;
 	background-color: #fff;
-	padding:  15px;
+	padding: 0;
+	margin: 0;
 	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
-	overflow: auto;
+	border-radius: 30px;
 }
-.box p{
+
+.usernameValue{
+	display: none;
 	text-align: center;
-}
-.box h2{
-	text-align: center;
-	margin-bottom: 120px;
-	font-size: 30px;
+	font-size: 10px;
 	color: #0C3757;
 }
-.close p{
-	background-color: grey;
+.usernameValue-F{
+	display: none;
+	text-align: center;
+	font-size: 10px;
+	color: #0C3757;
+}
+
+#logo-x{
+	margin-top: -50px;
+	margin-left: -220px;
+	border-radius: 10px;
+	text-align: center;
 	color:black;
+	font-weight: bolder;
 	font-size: 40px;
-	padding: 0 5px;
 	cursor: pointer;
+	max-height: 30px;
 
 }
 .close{
-	display: flex;
-	justify-content: flex-end;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
 	width: 100%;
 }

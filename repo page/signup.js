@@ -1,14 +1,15 @@
-let backgroundModal = document.querySelector('.background-modal');
-let box = document.querySelector('.box');
-let buttonsubmit = document.querySelector('.submit');
-let buttonclose = document.querySelector('.close');
-let username = document.querySelector('.username');
-let password = document.querySelector('.password');
-let modalText = document.querySelector('.box h2');
+var backgroundModal = document.querySelector('.background-modal');
+var box = document.querySelector('.box');
+var buttonsubmit = document.querySelector('.submit');
+var buttonclose = document.querySelector('.close');
+var username = document.querySelector('.username');
+var password = document.querySelector('.password');
+var modalText = document.querySelector('.box h2');
 
 
 function openModal() {
-    backgroundModal.style.display = "flex";
+    document.getElementsByClassName("backgroundModal").style.display = "flex"
+   /*  backgroundModal.style.display = "flex"; */
     box.style.display = "flex";
 }
 
@@ -18,10 +19,10 @@ function closeModal() {
 }
 
 function login() {
-    let username = document.querySelector('.username');
-    let password = document.querySelector('.password');
-    if (username.value == 'amiroh' && password.value == '123') {
-        modalHeading.innerText = `Hi, ${username.value}. Welcome back!`;
+    let username = document.getElementsByClassName("username").value
+    let password = document.getElementsByClassName("password").value
+    if (username == 'amiroh' && password== '123') {
+        document.getElementsById("username").style.display = "box"
         openModal();
     } else {
         modalHeading.innerText = `Try again, invalid username or password!`;

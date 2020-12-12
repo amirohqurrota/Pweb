@@ -7,7 +7,7 @@
 <body>
 	
 	<div class="overlay">
-		<form method="post" class="form">
+		<form method="post" class="form" onsubmit="return false;">
 			<div class="header">
 				<h4>LOGIN</h4>
 				<p>Djalan - djalan, welcome to wonderful of Indonesia</p>
@@ -15,7 +15,7 @@
 			<div class="login-area">
 				<input type="text" class="username" placeholder="Username">
 				<input type="password" class="password" placeholder="Password">
-				<input type="submit" value="Login" class="submit" onclick="login()">
+				<input type="submit" value="Login" class="submit" onclick="openModal()">
 				<a href="#">Forget your password </a>
 			</div>
 		</form>
@@ -23,13 +23,16 @@
 			<div class="background-modal">
 				<div class="box">
 					<div class="close">
-						<p>&times;</p>
-						<h2>Wellcome.</h2>
+						<p id="logo-x">&times;</p>
+						<h2 id="usernameValue">Wellcome back!</h2>
+						<h2 id="usernameValue-F">Invalid Password, Try Again</h2>
+						
 					</div>
 				</div>
 			</div>
 		
-	<script src="signup.js"></script>
+	
 </body>
+<script src="signup.js"></script>
 
 </html>

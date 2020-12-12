@@ -72,7 +72,70 @@ h2{
     color: grey;
 }
 input[type="button"]{
-    cursor: pointer;}
+	cursor: pointer;}
+	
+
+
+/* style modal .submit */
+
+#background-modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+#box-modal{
+	
+	display: none;
+	/* opacity: 0%; */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 25%;
+	background-color: rgb(255, 255, 255);
+	padding: 0;
+	margin: 0;
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+	border-radius: 30px;
+}
+
+#usernameValue{
+	margin-left: 80px;
+	margin-right: 80px;
+	justify-content: center;
+	text-align: center;
+	font-size: 15px;
+	color: #0C3757;
+}
+
+
+#logo-x{
+	margin-top: -50px;
+	margin-left: -220px;
+	border-radius: 10px;
+	text-align: center;
+	color:black;
+	font-weight: bolder;
+	font-size: 40px;
+	cursor: pointer;
+	max-height: 30px;
+
+}
+.close{
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+
+	width: 100%;
+}
+
 /*style pop up login*/
 
 .pop-up-form{
