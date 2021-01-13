@@ -188,8 +188,9 @@ body{
 	width: 100%;
 	height: 500px;
 	border-radius: 20px;
-	background-image: url("file gambar/steven-coffey-pAEeGAf30dg-unsplash.jpg");
+	background-image: url("file gambar/kal-visuals-bUtzPrCMj8Q-unsplash.jpg");
 	background-position: center;
+	background-size: 100vw;
 }
 .tulisan-highlight{
 	color: white;
@@ -198,7 +199,7 @@ body{
 }
 .tulisan-highlight>a{
 	margin-top: 0px;
-	color:white;
+	color: white;
 }
 .tulisan-highlight>h2{
 	margin-bottom: 0px;
