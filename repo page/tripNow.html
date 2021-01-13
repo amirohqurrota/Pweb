@@ -4,21 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Djalan - djalan</title>
-    <link rel="stylesheet" href="stylefromTripNow.css">
+    <link rel="stylesheet" href="styleTripNow.css">
 </head>
-<script>
-    function welcome(){
-        document.getElementById("welcome").style.display= "block";
-    }
-    function openForm() {
-        document.getElementById("login-popup").style.display = "block";
-    }
-    function closeForm() {
-        document.getElementById("login-popup").style.display = "none";
-        document.getElementById("nav-signin").style.display = "none";
-        welcome();  
-    }
-</script>
+<script type="text/javascript" src="tripNow.js"></script>
 <body>
     <nav class="navigasi" navbar-fixed-stop>
 		<div class="navigasi-wrap">
@@ -191,10 +179,22 @@
             </div>
 
             <div class="button-wrap" >
-                <input type="button" value="Trip Now" class="button" >
+                <input type="button" value="Trip Now" class="button" onclick="popUpSubmit()">
             </div>
         </form>
     </div>
+
+    <div class="popUpSubmit" id="submitForm">
+        <p id="logo-x" onclick="close-popup()" >&times;</p>
+        <img src="file gambar/email.png" alt="email" class="popUpSUbmit-image">
+        <div class="popUpSubmit-tulisan">
+            <h3>Thank You..</h3>
+            <h4>You will be hearing from us soon!</h4>
+            <a>please check your email frequently</a>
+        </div>
+        
+    </div>
+
 
     <div class="bottom">
 		<div class="bottom-baris-satu">

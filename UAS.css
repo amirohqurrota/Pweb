@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+}
+
+
+.a{
+    /* display: flex;
+    justify-content:space-evenly;  */
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+
+}
+

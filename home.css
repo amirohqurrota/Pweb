@@ -9,7 +9,8 @@ body{
     background-position: center;
     color: #0C3756;
     background-image: url("repo page/file gambar/background\ \(1\).jpg");
-    height: 100vh;
+	width: 100%;
+	background-position: center;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -35,31 +36,35 @@ h2{
 .navigasi-wrap{
 	padding: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	width: 100%;
+	
 	
 }
 .navigasi-tulisan{
 	text-align: left;
 	display: flex;
-	justify-content:flex-end;
+	justify-content:space-evenly;
 	font-weight: bolder;
-	padding-right:8px;
+	font-size: 1.2vw;
+	margin-left: 5vw;
 
 }
 .navigasi-tulisan>a{
-	margin:20px;
-	padding: 5px;
-	border-radius: 5px;
+	padding: 0.8vw;
+	margin: 1vw;
+	border-radius: 0.7vw;
 	color:rgba(12, 55, 86, 1);
 	text-decoration: none;
 	cursor: pointer;
+	width: max-content;
 }
 .navigasi-logo{
-	height: 50px;
-	padding-left: 50px;
+	padding-left: 3vw;
+	padding-top: 1vw ;
 }
 #image-navigasi{
-	height: 100%;
+	height: 3.1vw;
 }
 #welcome{
 	display: none;
@@ -67,6 +72,7 @@ h2{
 .nav-aktif{
 	background: #e2e9ee;
 	transition: .5s;
+	height: min-content;
 }
 .navigasi-tulisan>a:hover{
     color: grey;
@@ -224,7 +230,8 @@ input[type="button"]{
 .box{
     padding-left: 8%;
     display: flex;
-    color: black;
+	color: black;
+	width: 80%;
 }
 .box input{
     border-radius: 30px;
@@ -265,9 +272,9 @@ input[type="button"]{
 .about-us{
     background-image: url("repo page/file gambar/about.jpg");
     background-size: cover;
-    background-position: 0 100%;
-    width: 100vw;
-    height: 100vh;
+    background-position: center;
+	width: 100%;
+	height: 100vw;
     display: flex;
     align-items: center;
 }
@@ -295,8 +302,8 @@ h1{
     background-image: url("repo page/file gambar/contact.jpg");
     background-size: cover;
     background-position: 0 100%;
-    width: 100vw;
-	height: 100vh;
+    width: 100%;
+	height: 100vw;
 	display: flex;
     align-items: center;
 }
@@ -319,6 +326,7 @@ h1{
 	background-color: rgba(12, 55, 86, 1);
 	margin-top: 200px;
 	color: white;
+	font-size: 1.2vw;
 }
 
 .bottom-baris-satu{
@@ -344,7 +352,7 @@ h1{
 	display: grid;
 }
 #image-bottom{
-	width: 300px;
+	width: 30%;
 	border-radius: 5px;
 	margin-bottom: 0px;
 }
@@ -353,6 +361,7 @@ h1{
 	display: grid;
 	justify-items: center;
 	margin-top: -40px;
+	
 	
 }
 #submit-login-bottom{
@@ -366,7 +375,9 @@ h1{
 	margin-top: 15px;
 }
 .follow-us{
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-self: flex-start;
 	max-width: fit-content;
 	margin-top: 0px;
 	padding-top: 0px;
@@ -374,15 +385,22 @@ h1{
 }
 .follow-us-wrap-logo{
 	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 	margin-top: 0px;
 	padding-top: 0px;
+	width: 40%;
 }
 
 #follow-us-logo{
-	width: 30px;
+	width: 30%;
 	margin-left: 20px;
+	padding: 0;
 }
-
+.follow-us>a{
+	padding: 0;
+	margin: 0;
+}
 /*style pop up login*/
 
 .pop-up-form{
@@ -457,5 +475,6 @@ h1{
 	text-decoration: none;
 	color: #0C3757;
 	margin-top: 2px;
+
 }
 
