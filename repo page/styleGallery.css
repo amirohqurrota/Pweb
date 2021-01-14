@@ -15,6 +15,7 @@ body{
     padding: 0;
 }
 /*navigasi*/
+
 .navigasi{
 	position: fixed;
 	background-color:rgba(240, 252, 254, 1);
@@ -24,33 +25,35 @@ body{
 .navigasi-wrap{
 	padding: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	width: 100%;
+	
 	
 }
 .navigasi-tulisan{
 	text-align: left;
 	display: flex;
-	justify-content:flex-end;
+	justify-content:space-evenly;
 	font-weight: bolder;
-	padding-right:8px;
+	font-size: 1.2vw;
+	margin-left: 5vw;
+
 }
 .navigasi-tulisan>a{
-	margin:20px;
-	padding: 5px;
-	border-radius: 5px;
+	padding: 0.8vw;
+	margin: 1vw;
+	border-radius: 0.7vw;
 	color:rgba(12, 55, 86, 1);
 	text-decoration: none;
 	cursor: pointer;
-}
-.navigasi-tulisan>a:hover{
-    color: grey;
+	width: max-content;
 }
 .navigasi-logo{
-	height: 50px;
-	padding-left: 50px;
+	padding-left: 3vw;
+	padding-top: 1vw ;
 }
 #image-navigasi{
-	height: 100%;
+	height: 3.1vw;
 }
 #welcome{
 	display: none;
@@ -58,10 +61,14 @@ body{
 .nav-aktif{
 	background: #e2e9ee;
 	transition: .5s;
+	height: min-content;
+}
+.navigasi-tulisan>a:hover{
+    color: grey;
 }
 input[type="button"]{
-	cursor: pointer;
-}
+	cursor: pointer;}
+
 /*style pop up login*/
 
 .pop-up-form{
@@ -142,56 +149,114 @@ input[type="button"]{
 }
 
 /*galeri*/
-
-.gambar-gallery{
-	width: 45%;
-	height: 350px;
-	background-color: black;
-	border-radius: 20px;
-	background-image: url("file gambar/steven-coffey-pAEeGAf30dg-unsplash.jpg");
+#video-gallery{
+	width: 50%;
+	height: 100%;
 }
 .gallery{
-	margin-left: 50px;
-	margin-right: 50px;
-	padding-top: 70px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	padding-top: 10vw;
 }
 .tulisan-gallery{
-	width: 45%;
-	height: 350px;
-	margin-left: 10px;
-	font-size: 120%;
+	width: 50%;
+	margin-left: 2vw;
 }
 .tulisan-gallery-kiri{
-	width: 45%;
-	height: 350px;
-	margin-right: 10px;
-	font-size: 120%;
+	width: 50%;
+	margin-right: 2vw;
 }
 .tulisan-kanan{
 	text-align: right;
 }
 .tulisan-kiri> h2,h3,p{
 	text-align: left;
+	
 }
 
-.gallery-satuan{
+h2{
+	font-size: 2.3vw;
+}
+h3{
+	font-size: 1.8vw;
+}
+p{
+	font-size: 1.5vw;
+}
+
+
+.gallery-satuan,.gallery-satuan-kiri{
 	display: flex;
-	margin-top: 50px;
+	flex: 100%;
+	max-width: 100%;
+	margin-bottom: 10vw;
+	height: 25vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+.gallery-satuan-kiri{
+	flex-direction: row-reverse;
 }
 .tulisan-gallery>h2,h3,.tulisan-gallery-kiri>h2,h3{
 	margin: 0px;
 	padding: 0px;
 }
 
+@media (max-width: 600px) {
+	.gallery{
+		padding-top: 20vw;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.gallery-satuan,.gallery-satuan-kiri{
+		flex-direction: column-reverse;
+		justify-self: center;
+		margin-bottom: 25vw;
+		justify-content: center;
+		align-content: center;
+
+	}
+	.tulisan-gallery-kiri,.tulisan-gallery{
+		margin-left: auto;
+		margin-left: auto;
+	}
+
+	.tulisan-gallery,.tulisan-gallery-kiri,.tulisan-kanan,.tulisan-kiri{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+	.tulisan-gallery>h2,h3,p,.tulisan-gallery-kiri>h2,h3,p{
+		margin: 0px;
+		padding: 0px;
+	}
+	.tulisan-gallery>p,.tulisan-gallery-kiri>p{
+		margin-bottom: 1vw;
+	}
+	
+	#video-gallery{
+		width: 90%;
+		height: 35vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.more-tips{
+		margin-top: -10vw;
+	}
+}
+
 .more-tips{
 	display: flex;
 	margin-right: auto;
 	margin-left: auto;
-	width: 150px;
-	height: 30px;
-	border-radius: 10px;
+	width: 10vw;
+	height: 2.5vw;
+	border-radius: 1.1vw;
 	background-color: rgba(30, 83, 114, 1);
-	margin-top: 100px;
 }
 
 .more-tips>a{
@@ -201,6 +266,8 @@ input[type="button"]{
 	color: white;
 	font-weight: bolder;
 	font-style: none;
+	font-size: 1.3vw;
+
 }
 
 a:link {
@@ -208,27 +275,26 @@ a:link {
 }
 
 
+
+
+/*bottom*/
+
 .bottom{
 	width: 100%;
 	min-height: fit-content;
 	background-color: rgba(12, 55, 86, 1);
-	margin-top: 200px;
+	margin-top: 20vw;
 	color: white;
+	font-size: 1.2vw;
 }
 
 .bottom-baris-satu{
 	display: flex;
-	margin-left: 30px;
-	margin-right: 30px;
 	padding-top: 50px;
 	padding-left: 75px;
 	padding-right: 75px;
 	justify-content: space-between;
 }
-.etc{
-	width: 850px;
-}
-
 .etc-li{
 	list-style-type: none;
 	padding: 0px;
@@ -245,16 +311,16 @@ a:link {
 	display: grid;
 }
 #image-bottom{
-	width: 300px;
+	width: 30%;
 	border-radius: 5px;
 	margin-bottom: 0px;
 }
 
 .bottom-logo{
 	display: grid;
-	justify-content: center;
 	justify-items: center;
 	margin-top: -40px;
+	
 	
 }
 #submit-login-bottom{
@@ -266,23 +332,32 @@ a:link {
 	justify-content: center;
 	justify-self: flex-end;
 	margin-top: 15px;
-
 }
 .follow-us{
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-self: flex-start;
 	max-width: fit-content;
 	margin-top: 0px;
 	padding-top: 0px;
 	margin-left: 50px;
-
 }
 .follow-us-wrap-logo{
 	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 	margin-top: 0px;
 	padding-top: 0px;
+	width: 40%;
 }
 
 #follow-us-logo{
-	width: 30px;
-	margin-left: 20px;
+	width: 30%;
+	margin-left: 0; 	
+	padding: 0;
+
+}
+.follow-us>a{
+	padding: 0;
+	margin: 0;
 }
