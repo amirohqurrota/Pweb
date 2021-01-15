@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Djalan - djalan</title>
     <link rel="stylesheet" href="styleTripNow.css">
 </head>
 <script type="text/javascript" src="tripNow.js"></script>
+
 <body>
     <nav class="navigasi" navbar-fixed-stop>
 		<div class="navigasi-wrap">
@@ -35,7 +37,7 @@
             <div class="login-area">
                 <input type="text" class="username" placeholder="Username">
                 <input type="password" class="password" placeholder="Password">
-                <input type="submit" value="Login" class="submit" onclick="closeForm()">
+                <input type="submit" value="Login" class="submit" onclick="closeForm();">
                 <a href="#">Forget your password </a>
             </div>
         </form>
@@ -184,9 +186,9 @@
     </div>
 
 
-    <div class="popUpSubmit">
+    <div id="popUpSubmit">
         <div  id="submitForm">
-            <p id="logo-x" onclick="close-popup()" >&times;</p>
+            <p id="logo-x" onclick="closepopup()" >&times;</p>
             <img src="file gambar/email.png" alt="email" class="popUpSUbmit-image">
             <div class="popUpSubmit-tulisan">
                 <h3>Thank You..</h3>

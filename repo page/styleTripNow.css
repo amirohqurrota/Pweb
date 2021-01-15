@@ -293,14 +293,14 @@ select,#coloumn-3{
     min-width: 78vw;
 }
 
-.popUpSubmit{
-	display: flex;
+#popUpSubmit{
+	display: none;
 	width: 35%;
 	justify-self: center;
-	z-index: 1;
-	position: fixed;
-
-		
+	z-index: 9999;
+	margin-top: -40vw;
+	margin-left: 30vw;
+	position: absolute;	
 
 }
 #submitForm{
