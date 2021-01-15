@@ -222,9 +222,10 @@ input[type="button"]{
 	width: 100%;
 	min-height: fit-content;
 	background-color: rgba(12, 55, 86, 1);
-	margin-top: 20vw;
+	margin-top: 30vw;
 	color: white;
 	font-size: 1.2vw;
+	margin-bottom: 0;
 }
 
 .bottom-baris-satu{

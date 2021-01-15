@@ -1,4 +1,3 @@
-
 function welcome(){
     document.getElementById("welcome").style.display= "block";
 }
@@ -8,14 +7,11 @@ function openForm() {
 function closeForm() {
     document.getElementById("login-popup").style.display = "none";
     document.getElementById("nav-signin").style.display = "none";
-    welcome();  
+    welcome();
 }
-
-function popUpSubmit(){
-    document.getElementsByClassName("popUpSubmit").style.display = "block";
+function popUpSubmit() {
+    document.getElementById("popUpSubmit").style.display = "block";
 }
-
-function close-popup(){
-    document.getElementsById("submitForm").style.display = "none";
+function closepopup() {
+    document.getElementById("popUpSubmit").style.display = "none";
 }
-
