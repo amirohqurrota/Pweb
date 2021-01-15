@@ -158,14 +158,24 @@ h3{
 	font-size: 1.8vw;
 }
 p,li{
+	display: block;
+	padding: 0;
+	margin: 0;
 	font-size: 1.5vw;
+}
+
+input[type="text"],select,input[type="date"],textarea,input[type="button"]{
+	display: block;
+	font-size: 1.5vw;
+	padding: 0;
+	margin: 0;
 }
 .header-gambar{
     width: 100%;
-    height: 600px;
+    height: 45vw;
     padding: 0px;
     margin: 0px;
-    padding-top: 50px;
+    padding-top: 10vw;
     background-image: url("file gambar/matheus-bandoch-Wj76BhHrGG0-unsplash.jpg");
     background-position: center;
     background-size: cover;
@@ -178,20 +188,24 @@ p,li{
 .header-tulisan{
     display: grid;
     padding-left: 10vw;
-
  }
- .heading{
+
+.heading{
+	 display: block;
      padding: 0;
      margin: 0;
  }
 .header1{
     margin-left: 10vw;
     margin-bottom: 5vw;
-    color: rgba(12, 55, 86, 1);
+	color: rgba(12, 55, 86, 1);
 }
-/* .header1>.h7{
-    max-width: 850px;
-} */
+.header1>p{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
 .isian{
     padding-left: 2vw;
     padding-right: 2vw;
@@ -200,7 +214,9 @@ p,li{
     border-radius: 2vw;
     width: 90%;
     max-height: fit-content;
-    margin:auto;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 0;
     background-color:rgba(183, 217, 226, 0.5); 
 }
 
@@ -340,9 +356,9 @@ select,#coloumn-3{
 
 .bottom-baris-satu{
 	display: flex;
-	padding-top: 50px;
-	padding-left: 75px;
-	padding-right: 75px;
+	padding-top: 4vw;
+	padding-left: 7vw;
+	padding-right: 7vw;
 	justify-content: space-between;
 }
 .etc-li{
@@ -359,29 +375,50 @@ select,#coloumn-3{
 }
 .bottom-login{
 	display: grid;
+	max-width: 20%;
+	margin-left: 1.4vw;
+	margin-right: 1.5vw;
 }
+.bottom-login>input[type="text"]{
+	width: 80%;
+	height: 1vw ;
+}
+.bottom-login>input[type="password"]{
+	width: 80%;
+	height: 1vw ;
+}
+
+#remember-me{
+	width: 10%;
+}
+
+.checkbox-remember{
+	display: flex;
+	align-items: center;
+}
+
 #image-bottom{
-	width: 30%;
-	border-radius: 5px;
+	width: 20%;
+	border-radius: 0.5vw;
 	margin-bottom: 0px;
 }
 
 .bottom-logo{
 	display: grid;
 	justify-items: center;
-	margin-top: -40px;
+	margin-top: -4vw;
 	
 	
 }
 #submit-login-bottom{
 	display: flex;
 	background-color:rgba(118, 169, 255, 1);
-	border-radius: 5px;
+	border-radius: 0.5vw;
 	border-width: 0px;
 	width: 50%;
 	justify-content: center;
 	justify-self: flex-end;
-	margin-top: 15px;
+	margin-top: 1.5vw;
 }
 .follow-us{
 	display: flex;
@@ -390,20 +427,20 @@ select,#coloumn-3{
 	max-width: fit-content;
 	margin-top: 0px;
 	padding-top: 0px;
-	margin-left: 50px;
+	margin-left: 6vw;
 }
 .follow-us-wrap-logo{
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-around;
 	margin-top: 0px;
 	padding-top: 0px;
-	width: 40%;
+	width: 25%;
 }
 
 #follow-us-logo{
 	width: 30%;
-	margin-left: 20px;
+	margin-left: 0;
 	padding: 0;
 }
 .follow-us>a{
@@ -411,15 +448,6 @@ select,#coloumn-3{
 	margin: 0;
 }
 
-#follow-us-logo{
-	width: 30%;
-	margin-left: 20px;
-	padding: 0;
-}
-.follow-us>a{
-	padding: 0;
-	margin: 0;
-}
 
 
 

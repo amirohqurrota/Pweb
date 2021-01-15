@@ -290,9 +290,9 @@ a:link {
 
 .bottom-baris-satu{
 	display: flex;
-	padding-top: 50px;
-	padding-left: 75px;
-	padding-right: 75px;
+	padding-top: 4vw;
+	padding-left: 7vw;
+	padding-right: 7vw;
 	justify-content: space-between;
 }
 .etc-li{
@@ -309,29 +309,51 @@ a:link {
 }
 .bottom-login{
 	display: grid;
+	max-width: 20%;
+	margin-left: 1.4vw;
+	margin-right: 1.5vw;
 }
+.bottom-login>input[type="text"]{
+	width: 80%;
+	height: 1vw ;
+}
+.bottom-login>input[type="password"]{
+	width: 80%;
+	height: 1vw ;
+}
+
+#remember-me{
+	width: 10%;
+}
+
+.checkbox-remember{
+	display: flex;
+	align-items: center;
+}
+
 #image-bottom{
-	width: 30%;
-	border-radius: 5px;
+	width: 20%;
+	border-radius: 0.5vw;
 	margin-bottom: 0px;
 }
 
 .bottom-logo{
 	display: grid;
 	justify-items: center;
-	margin-top: -40px;
+	margin-top: -4vw;
 	
 	
 }
 #submit-login-bottom{
 	display: flex;
 	background-color:rgba(118, 169, 255, 1);
-	border-radius: 5px;
+	border-radius: 0.5vw;
 	border-width: 0px;
-	width: 50%;
+	width: 30%;
 	justify-content: center;
 	justify-self: flex-end;
-	margin-top: 15px;
+	margin-top: 1.5vw;
+	font-size: 1.5vw;
 }
 .follow-us{
 	display: flex;
@@ -340,22 +362,21 @@ a:link {
 	max-width: fit-content;
 	margin-top: 0px;
 	padding-top: 0px;
-	margin-left: 50px;
+	margin-left: 6vw;
 }
 .follow-us-wrap-logo{
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-around;
 	margin-top: 0px;
 	padding-top: 0px;
-	width: 40%;
+	width: 25%;
 }
 
 #follow-us-logo{
 	width: 30%;
-	margin-left: 0; 	
+	margin-left: 0;
 	padding: 0;
-
 }
 .follow-us>a{
 	padding: 0;
